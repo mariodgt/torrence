@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+	head
+	title Agents Collection | Master Elite 2017
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+	//meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+	meta(name="apple-mobile-web-app-capable", content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+	meta(name="theme-color", content="#0073AC")
+	meta(name="msapplication-navbutton-color", content="#0073AC")
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+	body
+		include ../header.jade
+
+		main.agents#agent-collection
+			.wp-filters-agents
+				.gwr
+					ul.directory
+						li: a(href="#", rel="nofollow") a
+						li: a(href="#", rel="nofollow") b
+						li: a(href="#", rel="nofollow") c
+						li: a(href="#", rel="nofollow") d
+						li: a(href="#", rel="nofollow") e
+						li: a(href="#", rel="nofollow") f
+						li: a(href="#", rel="nofollow") g
+						li: a(href="#", rel="nofollow") h
+						li: a(href="#", rel="nofollow") i
+						li: a(href="#", rel="nofollow") j
+						li: a(href="#", rel="nofollow") k
+						li: a(href="#", rel="nofollow") l
+						li: a(href="#", rel="nofollow") m
+						li: a(href="#", rel="nofollow") n
+						li: a(href="#", rel="nofollow") o
+						li: a(href="#", rel="nofollow") p
+						li: a(href="#", rel="nofollow") q
+						li: a(href="#", rel="nofollow") r
+						li: a(href="#", rel="nofollow") s
+						li: a(href="#", rel="nofollow") t
+						li: a(href="#", rel="nofollow") u
+						li: a(href="#", rel="nofollow") v
+						li: a(href="#", rel="nofollow") w
+						li: a(href="#", rel="nofollow") x
+						li: a(href="#", rel="nofollow") y
+						li: a(href="#", rel="nofollow") z
+						li: a(href="#", rel="nofollow").btn-all View all  
+								span agents
+					.bg-form-agent
+						form(method="get", id="filter-name", autocomplete="off")
+							input(type="text", value="", name="filter_name", placeholder="Search for an associate...").input-search
+							#submit-ms.icon-search
+								input(type="submit", value="Submit")
+
+			article#the-agents.gwr
+				h1.gTitle Our Agents
+				p Extending Related’s premium of finding only the very best, Related Realty’s agents are distinguished in their professionalism and are committed to guiding you with your real estate needs. All of our agents are highly knowledgeable, stay ahead of all the market trends, value open communication, and have the technology to ensure a smooth and easy transaction. We are always available to provide guidance throughout the process. With Related Realty, you’ll feel confident working with the best of the best.
+
+				ul#list-agents
+					- for(b = 0; b < 24; b++)
+						li
+							header
+								h3 Malek Abdulsamad
+								span Broker
+							a(href="#", title="Malek Abdulsamad").avatar
+								img(src="../images/profile.jpg", title="Agent Jorge Blanchard", alt="Jorge Blanchard")
+							ul.contact-info
+								li: a(href="mailto:jorge@uniquehomesofmiami.com", title="Email") jorge@uniquehomesofmiami.com
+								li: a(href="tel:3052163687", title="Phone number") O: 305.216.3687
+								li: a(href="tel:3052163687", title="Phone number") C: 305.216.3687
+
+		include ../footer.jade
+		//script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+		//script(type="text/javascript", src="../js/dgt-master.min.js")

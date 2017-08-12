@@ -1,0 +1,44 @@
+@import 'core/fonts/fonts.scss';
+@import 'core/icons/icons.scss';
+@import 'core/plugins/owl.carousel.scss';
+@import 'core/plugins/owl.theme.default.scss';
+@import 'core/plugins/perfect-scrollbar.scss';
+@import 'core/plugins/jquery-ui.scss';
+@import 'core/helpers/reset.scss';
+@import 'core/variables/variables.scss';
+@import 'core/mixins/mixins.scss';
+
+@import 'core/helpers/animations.scss';
+@import 'core/helpers/confirm.scss';
+@import 'core/helpers/error.scss';
+@import 'core/generals/printer.scss';
+@import 'core/generals/tooltip.scss';
+@import 'core/generals/modal.scss';
+
+@import 'core/generals/general.scss';
+@import 'core/generals/header-footer.scss';
+
+@import 'core/pages/result.scss';
+@import 'core/pages/neighborhoods.scss';
+@import 'core/pages/result-detail.scss';
+@import 'core/pages/condo-detail.scss';
+
+@import 'core/pages/profile-listings.scss';
+@import 'core/pages/collection-building.scss';
+@import 'core/pages/blog-collection.scss';
+@import 'core/pages/agents.scss';
+@import 'core/pages/neighborhoods-collection.scss';
+
+/**RESET DE PAGINA DE RESULTADOS CON NUEVOS ESTILO**/
+@import 'core/pages/neighborhoods-detail.scss';
+//@import 'core/pages/reset-result.scss';
+
+@import 'project/generals/header-footer.scss';
+
+/* Quick Searchs, v1, v2, v3, y Buildings */
+@import 'core/generals/quick-searchs.scss';
+@import 'core/pages/advance-search.scss';
+
+
+@import 'core/pages/exclusive-listing.scss';
+@import 'core/pages/home.scss';

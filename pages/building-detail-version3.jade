@@ -1,0 +1,930 @@
+doctype html
+html(lang='en')
+	head
+	title Condo Detail | Master Elite 2017
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+	//meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+	meta(name="apple-mobile-web-app-capable", content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+	meta(name="theme-color", content="#0073AC")
+	meta(name="msapplication-navbutton-color", content="#0073AC")
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+	body
+		include ../header.jade
+		main.property-details.theme-3
+			#full-main
+				.animated.fixed-box#fixed-wrap
+					section.title-conteiner.gwr
+						h1.title-page 3085 Munroe Drive
+							span Biscayne Camp • Coconut Grove, Miami, FL, 33133
+						.breadcrumb-options
+							a(href="#", title="call us 305 755 6354").btn.btn-green call us 305 755 6354
+							ul.nav-links
+								li: a(href="#", title="Miami Beach") Miami Beach
+								li: a(href="#", title="33139") 33139
+								li: a(href="#", title="Flamingo Lummus") Flamingo Lummus
+								li: a(href="#", title="710 Washington Avenue") 710 Washington Avenue
+								li: a(href="#", title="Apartment 203") Apartment 203
+				.header-print
+					img(src="../images/logo-tremgroup.png", title="Tremgroup")
+					ul
+						li Call me: (305) 705 - 5000
+						li info@tremgroup.com
+				#imagen-print
+				#full-slider
+					.wrap-slider
+						ul
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_1.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_2.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_4.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_5.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_6.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_7.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_8.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_9.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_10.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_1.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_2.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+							li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+						button.prev: span.icon-arrow-select
+						button.next: span.icon-arrow-select
+					.moptions
+						ul.slider-option
+							li
+								button#show-gallery.option-switch(data-view="gallery") photos
+							li
+								button#show-map.option-switch(data-view="map") map view
+							li
+								a(href="#") video
+						#min-map(data-map-img="https://maps.googleapis.com/maps/api/staticmap?center=26.1151040,-80.1207070&zoom=14&size=163x87&maptype=roadmap&scale=false&format=png&key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&visual_refresh=true&markers=size:mid%7Ccolor:0x0684c8%7Clabel:%7C26.1151040,-80.1207070")
+						button.full-screen#btn-flight Full screen
+					#map-view
+						#map-result(data-lat="26.1151040", data-lng="-80.1207070")
+				section.main
+					h2.title-temp Property details information
+					.gwr
+						.container
+							.panel-options
+								a(href="#",title="Schedule a showing now", data-modal="modal_schedule", rel="nofollow").show-modal.btn.btn-blue#schedule-now Schedule a tour
+
+								.options-list
+									.shared-content
+										button#show-shared share
+										ul.shared-list
+											li: a(href="#", title="Faceboook", rel="nofollow").ico-facebook Faceboook
+									
+									ul.action-list
+										li: a(href="#",title="email to a firend",data-modal="modal_email_to_friend",rel="nofollow").show-modal#email-friend.ico-envelope email to a friend
+										li: a(href="#",title="print",rel="nofollow")#print-btn.ico-printer print
+									
+									ul.property-information
+										li.favorite
+											button.chk_save
+												span Make Favorite
+							
+							.main-content
+								.property-description#property-description
+									h2 Building Details
+									p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+								
+								.list-details
+									h2.title-amenities Amenities
+									ul.list-amenities
+										li Below Ground Pool
+										li Boat Lift
+										li Central AC
+										li Breakfast Nook
+										li Media / Recreation Room
+										li Private dock
+										li Dishwasher
+										li Butlers Pantry
+										li Formal Dining Room
+										li Waterfront
+										li Microwave
+										li Fireplace
+										li Library / Den
+										li Water Views
+										li Gas Stove
+										li Wet Bar
+										li Dryer
+										li Detached Parking
+										li Refrigerator
+										li Hardwood Floors
+										li Washer
+										li Pool
+										li Eat-in Kitchen
+										li Marble Floors
+								
+								h2.title-condo-details Inventory
+								.group-flex.tabs-btn.show-desktop
+									li.active: a(href="#") for sale
+									li: a(href="#") For Rent
+									li: a(href="#") Sold
+									li: a(href="#") Rented
+									li: a(href="#") Pending Sales
+									li: a(href="#") Pending Rentals
+
+								.group-flex.tabs-btn
+									li.active: a(href="#") for sale
+									li: a(href="#") Sales History
+									li: a(href="#") For Rent
+									li: a(href="#") Sold
+									li: a(href="#") Pending Sales
+
+								#view-list.container.wp-thumbs.wrap-result.view-grid
+									h2.title-thumbs 2 Bedrooms Units
+
+									#wrap-subfilters
+										.gwr
+											ul#sub-filters
+												li#link-favorites
+													a(href="#", title="Save Favorites", rel="nofollow").icon-favorite
+														span
+															span 0
+															| Favorites
+												li.icon-arrow-select#filter-by
+													select
+														option(value="price-desc") Highest Price
+														option(value="price-asc") Lowest Price
+														option(value="bed-desc") Beds High to Low
+														option(value="bed-asc") Beds Low to High
+														option(value="size-desc") Size High to Low
+														option(value="size-asc") Size Low  to High 
+														option(value="year-newest") Year Newest
+														option(value="year-oldest") Year Oldest
+														option(value="newest-listed") Newest Listed
+														option(value="oldest-listed") Oldest Listed
+														option(value="#", selected="selected") Newest First
+												li.icon-arrow-select.grid#filter-views
+													select
+														option(value="grid", selected="selected") Grid
+														option(value="list") List
+											span#info-subfilters Showing 6 of 43 Properties
+
+									.tbl_properties_wrapper
+										table#dataTable-a.display(cellspacing="0" , width="100%")
+											thead
+												tr
+													th.dt-center.sorting unit
+													th.dt-center.sorting Asking price
+													th.dt-center.sorting % / $
+													th.dt-center.sorting Beds / Baths
+													th.dt-center.sorting.show-desktop Living Size
+													th.dt-center.sorting.show-desktop Price /Sf
+													th.dt-center.sorting.show-desktop Days on Market
+											tbody
+												tr
+													td
+														.unit
+															button.btn-check
+																span.icon-check
+															span Ph1232
+													td
+														.asking-number.blue $12,000,000
+													td
+														.porcentaje.red 2.05%
+													td
+														.beds 4/2/1
+
+													td.table-beds.show-desktop
+															.beds 8,800 SF (452m2)
+													td.table-beds.show-desktop
+															.price $1015($244 m2)
+													td.table-beds.show-desktop
+															.dayson $1015($244 m2)
+												tr
+													td
+														.unit
+															button.btn-check
+																span.icon-check
+															span Ph1232
+													td
+														.asking-number.blue $13,000,000
+													td
+														.porcentaje.red 2.05%
+													td
+														.beds 4/2/1
+
+													td.table-beds.show-desktop
+															.beds 8,800 SF (452m2)
+													td.table-beds.show-desktop
+															.price $1015($244 m2)
+													td.table-beds.show-desktop
+															.dayson $1015($244 m2)
+									
+									ul.result-search.slider-generator
+										- for(b = 0; b < 6; b++)
+												- var price = Math.floor(Math.random() * 101)
+												li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+													h2(title="Nombre completo de la dirección")
+														span 151012 Collins Avenue Suit
+													ul.features
+														li.house-type: h3 Condo For Sale
+														li.address Miami, FL 33145
+														li.price $#{price},000,000
+														li.pr.down 2.05%
+														li.beds 10  
+															span Beds 
+														li.baths 8 
+															span Baths 
+														li.living-size 
+															span 2,534
+															| SF 
+															span (452 m2)
+														li.price-sf
+															span $345 
+															| / SF
+															span ($244 m2)
+														li.type: span Davis citrus Farms
+														li.build-year
+															span Built 
+															| 2015
+														li.development: span Star Island Corr
+													.wrap-slider
+														ul
+															li
+																img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+														button.prev: span.icon-arrow-select
+														button.next: span.icon-arrow-select
+													button.btn-check: span.icon-check
+													a(href="javascript:void(0)", data-modal="modal_property_detail", data-position="0", rel="nofollow").view-detail.show-modal View detail
+
+									h2.title-thumbs 3 Bedrooms Units
+									.tbl_properties_wrapper
+										table#dataTable-b.display(cellspacing="0" , width="100%")
+											thead
+												tr
+													th.dt-center.sorting unit
+													th.dt-center.sorting Asking price
+													th.dt-center.sorting % / $
+													th.dt-center.sorting Beds / Baths
+													th.dt-center.sorting.show-desktop Living Size
+													th.dt-center.sorting.show-desktop Price /Sf
+													th.dt-center.sorting.show-desktop Days on Market
+											tbody
+												tr
+													td
+														.unit
+															button.btn-check
+																span.icon-check
+															span Ph1232
+													td
+														.asking-number.blue $12,000,000
+													td
+														.porcentaje.red 2.05%
+													td
+														.beds 4/2/1
+
+													td.table-beds.show-desktop
+															.beds 8,800 SF (452m2)
+													td.table-beds.show-desktop
+															.price $1015($244 m2)
+													td.table-beds.show-desktop
+															.dayson $1015($244 m2)
+												tr
+													td
+														.unit
+															button.btn-check
+																span.icon-check
+															span Ph1232
+													td
+														.asking-number.blue $13,000,000
+													td
+														.porcentaje.red 2.05%
+													td
+														.beds 4/2/1
+
+													td.table-beds.show-desktop
+															.beds 8,800 SF (452m2)
+													td.table-beds.show-desktop
+															.price $1015($244 m2)
+													td.table-beds.show-desktop
+															.dayson $1015($244 m2)
+
+								.wp-floorplan-condo
+									ul.list-floorplan
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+										li: img(src="../images/flooplans.jpg" alt="floorPant")
+
+									.img-floorplan: img(src="../images/flooplans.jpg" alt="floorPant")
+									.wp-imagen: img#img-default(src="../images/flooplans.jpg" alt="floorPant")
+									h2.title-condo-details Flooplans
+									.wp-table-condo
+										ul.group-flex.head-flr
+											li.f-line Line
+											li.f-beds Bedrooms
+											li.f-bath Bathrooms
+											li.f-living Living Size
+											li.f-f-floors.show-desktop Floors
+											li.f-floorplans.show-desktop Floorplans
+										ul.group-flex.eventhover(data-img="../images/flooplans2.jpg" data-imgmodal="")
+											li.f-line Line A-F
+											li.f-beds 4
+											li.f-bath 4
+											li.f-living 8,800 Sf (452 m2)
+											li.f-f-floors.show-desktop 8 - 12
+											li.f-floorplans.view.show-desktop: a(href="#") View
+										ul.group-flex.eventhover(data-img="../images/flooplans3.jpg" data-imgmodal="")
+											li.f-line Line A-F
+											li.f-beds 4
+											li.f-bath 4
+											li.f-living 8,800 Sf (452 m2)
+											li.f-f-floors.show-desktop 8 - 12
+											li.f-floorplans.view.show-desktop: a(href="#") View
+
+								.info-statistics
+									h3 Want to know if is the right time to sell your unit at Continuum South Beach?
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, Dolorem dolore nisi eligendi necessitatibus in nobis numquam minima odit perferendis nam.
+									a(href="#").btn Get a FREE Home Evaluation
+
+								#content-map
+									#map(data-lat="26.1151040", data-lng="-80.1207070")
+
+								.property-contact
+									.form-content.large-form
+										.avatar-content
+											.content-avatar-image
+												img(data-src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img
+											.avatar-information
+												h2 John Smith
+												a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+												a(href="#",title="More Information").view-more More Information
+										form(action="", method="POST", id="form-request")
+											.gform_body
+												ul.gform_fields
+													li.gfield
+														label.gfield_label Name
+														.ginput_container.ginput_container_text
+															input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+													li.gfield
+														label.gfield_label Email
+														.ginput_container.ginput_container_email
+															input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+													li.gfield
+														label.gfield_label Phone
+														.ginput_container.ginput_container_email
+															input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+													li.gfield.comments
+														label.gfield_label Comments
+														.ginput_container
+															textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+													li.gfield.requiredFields * Required Fields
+													.gform_footer
+														input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+
+									.info-content
+										p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+										span IDX by: 
+											a(href="#", title="FLEXIDX") FLEXIDX
+
+									.content-table
+										h2.title-table Price History
+										table.table
+											thead
+												tr
+													th Date
+													th Event
+													th Price
+													th $/SQFT
+													th.flag-icon Source
+											tbody
+												tr
+													td 03/13/17
+													td Listed for sale
+													td
+														label Price
+														|$149,000
+														span.rand-price.down -21.2%
+													td 
+														label $/SQFT
+														|$372
+													td.flag-icon  
+														label Source
+														.ellipsis Douglas Ellimalorem ipsum
+												tr
+													td 03/02/15
+													td Listed for sale
+													td
+														label Price
+														|$179,000
+													td 
+														label $/SQFT
+														|$472
+													td.flag-icon  
+														label Source
+														.ellipsis Douglas Ellimalorem ipsum
+												tr
+													td 08/18/14
+													td Listed for sale
+													td
+														label Price
+														|$189,000
+													td 
+														label $/SQFT
+														|$472
+													td.flag-icon 
+														label Source
+														.ellipsis Douglas Ellimalorem ipsum
+										a(href="javascript:void(0)", title="Show more").more-results More
+
+									
+									.content-table
+										h2.title-table Tax History
+										p Find assessor information on the
+											a(href="#", title="country website") country website
+										table.table
+											thead
+												tr
+													th Year
+													th Property Taxes
+													th Change
+													th Tax Assessment
+													th Change
+											tbody
+												tr
+													td 2015
+													td $2,188
+													td
+														label Change
+														span.rand-price.up +4.6%
+													td 
+														label Tax Assessment
+														|$96,110
+													td 
+														label Change
+														span.rand-price.up +10.0%
+												tr
+													td 2014
+													td $2,092
+													td
+														label Change
+														span.rand-price.up +29.5%
+													td 
+														label Tax Assessment
+														|$87,373
+													td 
+														label Change
+														span.rand-price.up +10.0%
+												tr
+													td 2013
+													td $1,615
+													td
+														label Change
+														span.rand-price.up +4.7%
+													td 
+														label Tax Assessment
+														|$79,430
+													td 
+														label Change
+														span --
+										a(href="javascript:void(0)", title="Show more").more-results More
+
+								#content-ms.content-ms.wrap-result.view-grid
+									h2.title-similar-list More near by properties
+									.wrapper-ms
+										.wrap-list-result
+											ul.result-search.slider-generator
+												- for(b = 0; b < 8; b++)
+													- var price = Math.floor(Math.random() * 101)
+													li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+														h2(title="Nombre completo de la dirección")
+															span 151012 Collins Avenue Suit
+														ul.features
+															li.house-type: h3 Vacant Land For Sale
+															li.address Miami, FL 33145
+															li.price $#{price},000,000
+															li.pr.down 2.05%
+															li.beds 10  
+																span Beds 
+															li.baths 8 
+																span Baths 
+															li.living-size 
+																span 2,534
+																| SF 
+																span (452 m2)
+															li.price-sf
+																span $345 
+																| / SF
+																span ($244 m2)
+															li.type: span Davis citrus Farms
+															li.build-year
+																span Built 
+																| 2015
+															li.development: span Star Island Miami
+														.wrap-slider
+															ul
+																li
+																	img(src="#" data-src='../images/propiertie.jpg', title='#', alt='#')
+															button.prev: span.icon-arrow-select
+															button.next: span.icon-arrow-select
+															button.btn-check: span.icon-check
+															a(href="#").view-detail Miami, FL 33145		
+										button.prev.nav: span.icon-arrow-select Prev
+										button.next.nav: span.icon-arrow-select Next
+
+						.aside
+							ul.property-information.ltd
+								li.price $540K to $840K 
+									span listing price 
+										span.down-price 2.1%
+								li.sale
+									button 45 
+										span For Sale
+								li.rent 
+									button 21 
+										span For Rent
+								li.sold 
+									button 18 
+										span Sold
+								li.item-list 
+									span Bedrooms
+									span 1 to Penthouses
+								li.item-list 
+									span Year Built
+									span 1990
+								li.item-list 
+									span Units
+									span 320
+								li.item-list 
+									span Stories
+									span 21
+								li.item-list 
+									span Average Price SqFt
+									span Active
+								li.item-list 
+									span Average Price M2
+									span Regular Sale
+								li.item-list 
+									span Average Days on Market
+									span 05/12/2005
+								li.item-list 
+									span Neighborhood
+									span Miami Beach
+
+							.form-content
+								.avatar-content
+									.content-avatar-image
+										img(data-src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img
+									.avatar-information
+										h2 John Smith
+										a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+										a(href="#",title="More Information").view-more More Information
+								form(action="", method="POST", id="form-request")
+									.gform_body
+										ul.gform_fields
+											li.gfield
+												label.gfield_label Name
+												.ginput_container.ginput_container_text
+													input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+											li.gfield
+												label.gfield_label Email
+												.ginput_container.ginput_container_email
+													input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+											li.gfield
+												label.gfield_label Phone
+												.ginput_container.ginput_container_email
+													input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+											li.gfield.comments
+												label.gfield_label Comments
+												.ginput_container
+													textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+											li.gfield.requiredFields * Required Fields
+											.gform_footer
+												input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+
+							.info-content
+								p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+								span IDX by: 
+									a(href="#", title="FLEXIDX") FLEXIDX
+
+							.wp-statisticss
+								h2.subtitle-b Inventory
+								#chart-container FusionCharts will render here
+								.cols.inventory-sta
+									h4 Inventory
+									.data-inventory.group-flex
+										.div
+											.cir-sta.sale 31
+											| For sale
+										.div
+											.cir-sta.rent 9
+											| For rent
+							.condo-statics
+								h2.subtitle-b Condo Statistics
+								ul.condo-st
+									li
+										span $1,139,000 
+										| to 
+										span $6,495,000
+									li
+										span $1,223/sf 
+										| avg price /sf
+									li
+										span 148 
+										| avg days on market
+									li
+										span 101.1% 
+										| of building is for sale
+									li
+										span 5.9% 
+										| of building sold in previous 12 months
+							
+							.info-statistics
+								h3 Want to know if is the right time to sell your unit at Continuum South Beach?
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, Dolorem dolore nisi eligendi necessitatibus in nobis numquam minima odit perferendis nam.
+								a(href="#").btn Get a FREE Home Evaluation
+								
+							section.wrap-result.view-grid.similar-properties
+								h2.title-similar-list Miami Beach Properties
+								.wrap-list-result
+									ul.result-search.slider-generator
+											- for(b = 0; b < 4; b++)
+												- var price = Math.floor(Math.random() * 101)
+												li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+													h2(title="Nombre completo de la dirección")
+														span 151012 Collins Avenue Suit
+													ul.features
+														li.house-type: h3 Vacant Land For Sale
+														li.address Miami, FL 33145
+														li.price $#{price},000,000
+														li.pr.down 2.05%
+														li.beds 10  
+															span Beds 
+														li.baths 8 
+															span Baths 
+														li.living-size 
+															span 2,534
+															| SF 
+															span (452 m2)
+														li.price-sf
+															span $345 
+															| / SF
+															span ($244 m2)
+														li.type: span Davis citrus Farms
+														li.build-year
+															span Built 
+															| 2015
+														li.development: span Star Island Miami
+													.wrap-slider
+														ul
+															li
+																img(src="#" data-src='../images/propiertie.jpg', title='#', alt='#')
+														button.prev: span.icon-arrow-select
+														button.next: span.icon-arrow-select
+														button.btn-check: span.icon-check
+														a(href="#").view-detail Miami, FL 33145		
+								a(href="#", title="view more properties", rel="nofollow").show-more view more properties
+
+							.similar-properties
+								h2.title-similar-list Similar Properties For Sale
+									- for(b = 0; b < 6; b++)
+										article
+											h2 
+												a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+													span Miami Beach, FL 33139
+											ul
+												li.price $65,000,000
+												li 
+													span 4 
+													|Beds
+												li 
+													span 3 
+													|Baths
+												li 
+													span 10,547 
+													|SqFt
+											a(href="#", title="1 Casuarina Concorse").layout-img
+												img(data-src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img
+											a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+								a(href="#", title="view more properties", rel="nofollow").show-more view more properties
+			#content-modals
+				#modal_email_to_friend.overlay_modal
+					.modal_cm
+						button.close.close-modal(data-frame="modal_mobile", data-id="modal_email_to_friend") Close
+						.content_md
+							.heder_md
+								h2 Email to a friend
+							.body_md
+								p Recomend this to a friend, just enter their email below...
+								.form_content
+									form(action="", method="POST", id="form-email-friend")
+										.gform_body
+											ul.gform_fields
+												li.gfield
+													label.gfield_label Friend email
+													.ginput_container.ginput_container_email
+														input(name="input_1", id="", type="email", value="", placeholder="Friend email*").medium
+												li.gfield
+													label.gfield_label Friend name
+													.ginput_container.ginput_container_email
+														input(name="input_2", id="", type="text", value="", placeholder="Friend name*").medium
+												li.gfield
+													label.gfield_label My name
+													.ginput_container.ginput_container_email
+														input(name="input_3", id="", type="text", value="", placeholder="My name*").medium
+												li.gfield
+													label.gfield_label My email
+													.ginput_container.ginput_container_email
+														input(name="input_4", id="", type="email", value="", placeholder="Friend email*").medium
+												li.gfield.comments
+													label.gfield_label Comments
+													.ginput_container
+														textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+												li.gfield.requiredFields * Required Fields
+											.gform_footer
+												input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+					.overlay_modal_closer(data-frame="modal_mobile", data-id="modal_email_to_friend")
+				
+				#modal_schedule.overlay_modal
+					.modal_cm
+						button.close.close-modal(data-frame="modal_mobile", data-id="modal_schedule") Close
+						.content_md
+							.heder_md
+								h2 Schedule a showing
+							.body_md
+								.msg 441 Dilido Island, Miami Beach Fl 33145
+								.form_content
+									form(action="", method="POST", id="form-scheduled")
+										.gform_body
+											ul.gform_fields
+												li.gfield
+													.ginput_container.ginput_container_email
+														input(name="input_1", id="", type="text", value="", placeholder="Name").medium
+												li.gfield
+													.ginput_container.ginput_container_email
+														input(name="input_2", id="", type="email", value="", placeholder="Email").medium
+												li.gfield
+													.ginput_container.ginput_container_email
+														input(name="input_3", id="", type="text", value="", placeholder="Phone number").medium
+												li.gfield.comments
+													.ginput_container
+														textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea Comments
+												li.gfield.field_sublabel_below Prefered Time and Date
+												li.gfield.time
+													.ginput_container.ginput_container_time
+														select.medium
+															option Morning
+															option Afternoon
+															option Evening
+												li.gfield.date
+													.ginput_container.ginput_container_date 
+														select.medium
+															option Select Date
+											.gform_footer
+												input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+					.overlay_modal_closer(data-frame="modal_mobile", data-id="modal_schedule")
+				
+				#modal_calculator.overlay_modal
+					.modal_cm
+						button.close.close-modal(data-frame="modal_mobile", data-id="modal_calculator") Close
+						.content_md
+							.heder_md
+								h2 Mortgage calculator
+							.body_md
+								p Let’s us know the best time for showing.
+								ul.contact-opt
+									li: a(href="tel:3057055000") (305) 705 - 5000
+									li: a(href="mailto:info@tremgroup.com") info@tremgroup.com
+								.form_content
+									form(action="", method="POST", id="form-calculator")
+										.gform_body
+											ul.gform_fields
+												li.gfield
+													label.gfield_label Purchase Price
+													.ginput_container.ginput_container_email
+														input(name="input_1", id="", type="text", value="$410,000").medium
+												li.gfield
+													label.gfield_label % Down Payment
+													.ginput_container.ginput_container_payment
+														input(name="input_2", id="", type="text", value="20").medium
+												li.gfield
+													label.gfield_label Term
+													.ginput_container.ginput_container_years
+														select.medium
+															option 30 Years
+															option 20 Years
+												li.gfield
+													label.gfield_label Interest Rate
+													.ginput_container.ginput_container_rate
+														input(name="input_3", id="", type="text", value="4.25").medium
+											.gform_footer
+												input(type="submit", id="gform_submit_button_5", value="Calculate").gform_button.button
+								.detail-mortgage
+									h3 Mortgage breakdown
+									ul
+										li
+											span Mortgage Amount
+											span.text-bold $328,000.00
+										li
+											span Down Payment Amount
+											span.text-bold $82,000.00
+										li.line-top
+											span Mortgage Amount
+											span.text-bold.mtotal $328,000.00
+					.overlay_modal_closer(data-frame="modal_mobile", data-id="modal_calculator")
+				
+				#modal_login.overlay_modal
+					.modal_cm.login-modal
+						.img_modal
+							img.lazy-img(data-src='../images/loginavatar.jpg')             
+						#content-info-modal
+							.modal_cm.social_items
+								button.close.close-modal(data-frame="modal_mobile", data-id="modal_login") Close
+								.content_md
+									.heder_md
+											h2 Welcome back
+									.body_md
+										p.text-slogan Sign in below
+										ul.contact-opt
+											li
+												a(href='tel:3057055000') (305) 705 - 5000
+											li
+												a(href='mailto:info@tremgroup.com') info@tremgroup.com
+										ul.header-tab
+											li
+												a.active(href='javascript:void(0)', title='Sign in', data-tab='tabLogin') Sign in
+											li
+												a(href='javascript:void(0)', title='Register', data-tab='tabRegister') Register
+											li
+												a(href='javascript:void(0)', title='Reset Password', data-tab='tabReset') Reset Password
+										#tabLogin.item_tab.active
+											.form_content
+												form#formLogin(name='formLogin', method='POST', action='')
+													ul#cntLoginForm.form_md
+														li.form_input
+															input#txt_user(type='email', name='user_name', placeholder='Enter email')
+														li.form_input
+															input#txt_pwd(type='password', name='user_pass', placeholder='Enter password')
+													button#btn-user-login.btn_form(type='submit') Sign in
+										#tabRegister.item_tab
+											.form_content
+												form#formRegister(name='formRegister', method='POST', action='')
+													ul#cntRegisterForm.form_md
+														li.form_input
+															input#register_email(type='email', name='register_email', placeholder='Enter email')
+														li.form_input
+															input#register_name(type='text', name='register_name', placeholder='Name')
+														li.form_input
+															input#register_phone(type='text', name='register_phone', placeholder='Phone number')
+														li.form_input
+															input#register_password(type='password', name='register_password', placeholder='Create password')
+															span.desc The password must be greater than 8 characters
+													button#btn-user-register.btn_form(type='submit') Register
+										#tabReset.item_tab
+											.form_content
+												form#formReset(name='formReset', method='POST', action='')
+													p Enter you email address and we&apos;ll send you a link to your password                                
+													ul#cntResetForm.form_md
+														li.form_input
+															input#reset_email(type='email', name='reset_email', placeholder='Enter E-mail')                                
+													button#btn-user-reset.btn_form(type='submit') Send
+													ul.terms-opt
+														li
+															span I accept 
+																a(href='#', title='Terms of use') Terms of use
+									.footer_md
+										ul.social_login
+											li Or sign in with
+											li
+												a.ico-facebook(href='#', title='Facebook') Facebook
+											li
+												a.ico-google(href='#', title='Google+') Google+
+					.overlay_modal_closer(data-frame="modal_mobile", data-id="modal_login") 
+				
+				#modal_img_propertie
+					.bg-black
+					h4.title Off Market: 
+						span % (% beds, % baths, % sqft)
+					ul.actions-buttons
+						//li.save-home: a(href="#", title="#") Save Home
+						//li.save-img: a(href="#") Save image
+						li.close-modal: button: span.icon-close Close
+					.wrapper-img
+						span.numeration
+							span 1 
+							| of 
+							span 21
+						img.img(src="https://photos.zillowstatic.com/p_f/ISli4mp90fiwvl0000000000.jpg", title="#", alt="#")
+					button.prev.nav.opacity: span.icon-arrow-select
+					button.next.nav: span.icon-arrow-select  
+			#printMessageBox Please wait while we create your document
+		
+		include ../footer.jade
+		script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+		script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+		script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+		script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+		script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&#038")
+		script(type="text/javascript", src="../js/plugins/fusioncharts.js")
+		script(type="text/javascript", src="../js/plugins/jquery.dataTables.min.js")
+		script(type="text/javascript", src="../js/dgt-master.min.js")
+		script(type="text/javascript", src="../js/plugins/properties-js.js")
+		script(type="text/javascript", src="../js/plugins/condo-js.js")

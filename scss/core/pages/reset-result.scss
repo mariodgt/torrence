@@ -1,0 +1,332 @@
+#wrap-result,
+.wrap-result {
+  &.view-grid {
+    #result-search,
+    .result-search {
+      .propertie {
+        position: relative;
+        margin: 0 auto 1rem auto;
+        display: block;
+        h2,
+        .n-address {
+          order:2;
+          padding-left: 7%;
+          position: absolute;
+          bottom: 15px;
+          left: 0;
+          z-index: 2;
+          color: #FFF;
+          font-weight: 600;
+          width: 62%;
+          span {
+            text-align: left;
+            font-size: 0.625rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+          }
+        }
+        h2.n-name{
+          padding-left: 7%;
+          position: absolute;
+          font-weight: 700;
+          font-size: 1.375rem;
+          color: #FFF;
+          width: 100%;
+          height: auto;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+          bottom: 44px;
+          top: auto;
+          span{
+            font-size: 1.375rem;
+            width: 90%;
+            margin-left: 0;
+          }
+        }
+        .features {
+          order:3;
+          justify-content: flex-start;
+          width: 100%;
+          height: 100%;
+          align-items: flex-end;
+          padding-left: 7%;
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          .house-type{
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            h3{
+              font-size: 0.6875rem;
+              color: #FFF;
+              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+            }
+          }
+          .address {
+            display: none;
+          }
+          .beds, .baths, .living-size, .price-sf, .for-sale, .for-rent, .sold, .n-stattus {
+            margin-right: 6px;
+            padding-right: 6px;
+            position: relative;
+            font-weight: 400;
+            color: #FFF;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+            font-size: 0.75rem;
+            bottom: 30px;
+            span{
+              font-weight: 400;
+            }
+            &:after {
+              content: "";
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              background-color: #FFF;
+              border-radius: 100%;
+              position: absolute;
+              right: -2.3px;
+              top: 50%;
+              margin-top: -1px;
+            }
+          }
+          .price-sf, .sold, .n-stattus{
+            margin-right: 0;
+            padding-right: 0;
+            &:after{
+              display: none !important;
+            }
+          }
+          .type, .build-year, .unit, .floors, .n-year, .n-unit {
+            display: none;
+          }
+          .type,
+          .n-neighborhood{
+            display: block;
+            position: absolute;
+            right: 15px;
+            color: #FFF;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+            padding: 0;
+            border: none;
+            height: auto;
+            width: 30%;
+            margin: 0;
+            bottom: 17px;
+            &:before{
+              display: none;
+            }
+            span{
+              width: 100%;
+              padding: 0;
+              font-size: 0.6875rem;
+              text-align: right;
+            }
+          }
+          .price {
+            position: relative;
+            font-weight: 700;
+            font-size: 1.375rem;
+            color: #FFF;
+            width: 100%;
+            height: auto !important;
+            background: none;
+            justify-content: flex-start;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+            //top: 38.04474%;
+            bottom: -50px;
+            top: auto;
+          }
+          .living-size,
+          .price-sf{
+            span{
+              &:first-child{
+                font-weight: 400;
+              }
+            }
+          }
+          .development, .pr {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+}
+
+#wrap-result,
+.wrap-result{
+  &.view-grid{
+    #result-search,
+    .result-search{
+      .propertie{
+        .wrap-slider{
+          height: 200px;
+          ul{
+            li{
+              position: relative;
+              overflow: hidden;
+              img{
+                transform: scale(1.8);
+                &.no-zoom{
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#wrap-result.view-list{
+  #result-search{
+    .propertie{
+      h2{
+        span{
+          text-transform: uppercase;
+        }
+      }
+      &:last-child{
+        border-bottom: 1px solid #CCCCCC;
+      }
+    }
+  }
+}
+
+#wrap-result.view-list #result-search .propertie, 
+#wrap-result.view-list .result-search .propertie, 
+.wrap-result.view-list #result-search .propertie, 
+.wrap-result.view-list .result-search .propertie{
+  &:hover{
+    border-bottom: 1px solid #ccc;
+  }
+  &:last-child{
+    border-bottom: 1px solid #ccc;
+    &:hover{
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+
+@media screen and (min-width: 480px){
+  #wrap-result,
+  .wrap-result{
+    &.view-grid{
+      #result-search,
+      .result-search{
+        .propertie{
+          .wrap-slider {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #wrap-result,
+  .wrap-result{
+    &.view-grid{
+      #result-search,
+      .result-search{
+        .propertie{
+          margin-bottom: 1rem;
+          margin-right: 2.1632%;
+          .wrap-slider {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #wrap-result,
+  .wrap-result {
+    &.view-grid {
+      #result-search,
+      .result-search {
+        .propertie {
+          margin-right: 2%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #wrap-result{
+    &.view-map{
+      #wrap-list-result,
+      .wrap-list-result{
+        #result-search,
+        .result-search{
+          .propertie{
+            border-bottom: 1px solid #e4e4e4;
+            h2{
+              left: 150px;
+              top: 16px;
+            }
+            .btn-check{
+              bottom: auto;
+              top: 15px;
+              position: absolute;
+              left: 85px;
+            }
+            .features{
+              margin-top: 0;
+              li{
+                &.price{
+                  bottom: 29px;
+                  left: 30px;
+                  height: 26px;
+                }
+              }
+            }
+            .wrap-slider {
+              height: 75px;
+              width: 110px;
+              img{
+                transform: scale(1.6);
+              }
+            }
+            .view-detail{
+              position: absolute;
+              bottom: 21px;
+              left: 150px;
+              color: $colorweb;
+              font-size: 0.8125rem;
+            }
+            &:last-child{
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px){
+  #wrap-result,
+  .wrap-result  {
+    &.view-grid {
+      #result-search,
+      .result-search {
+        .propertie {
+          margin-right: 1.7%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

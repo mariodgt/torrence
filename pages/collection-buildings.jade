@@ -1,0 +1,938 @@
+doctype html
+html(lang='en')
+  head
+    title Building Collection | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body
+    include ../header.jade
+    main#new-construction.collection
+      #wrap-filters.animated.fixed-box
+        .gwr
+          ul#filters
+            li.type-rt.icon-arrow-select
+              select
+                option(value="0", selected="selected") Luxury Condos by Name
+                option(value="1") Lorem ipsum
+                option(value="2") Lorem ipsum
+                option(value="3") Lorem ipsum
+                option(value="4") Lorem ipsum
+            li.type-rt.icon-arrow-select
+              select
+                option(value="0", selected="selected") Luxury Condos by Neighborhood
+                option(value="1") Lorem ipsum
+                option(value="2") Lorem ipsum
+                option(value="3") Lorem ipsum
+                option(value="4") Lorem ipsum
+            li.mini-search
+              form(action="#")
+                input(type='search', placeholder="Select Area or Enter City, Zip, Condo Name or Keyword")#autocomplete-ajax
+                #submit-ms.icon-search
+                  input(type="submit", value="Submit")
+              #search-suggestions
+                ul
+                  li(data-slug='Aventura|city') Aventura
+                  li(data-slug='Bal Harbour|city') Bal Harbour
+                  li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                  li(data-slug='Brickell|city') Brickell
+                  li(data-slug='Brickell Key|city') Brickell Key
+                  li(data-slug='Coconut Grove|city') Coconut Grove
+                  li(data-slug='Coral Gables|city') Coral Gables
+                  li(data-slug='Fisher Island|city') Fisher Island
+                  li(data-slug='Hollywood|city') Hollywood
+                  li(data-slug='Indian Creek|city') Indian Creek
+                  li(data-slug='Key Biscayne|city') Key Biscayne
+                  li(data-slug='Miami|city') Miami
+                  li(data-slug='Miami Beach|city') Miami Beach
+                  li(data-slug='Miami Shores|city') Miami Shores
+                  li(data-slug='North Miami|city') North Miami
+                  li(data-slug='North Miami Beach|city') North Miami Beach
+                  li(data-slug='Pembroke Pines|city') Pembroke Pines
+                  li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                  li(data-slug='Surfside|city') Surfside
+              #autocomplete-matches
+                ul
+                  li(data-slug='Aventura|city') Aventura
+                  li(data-slug='Bal Harbour|city') Bal Harbour
+                  li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                  li(data-slug='Brickell|city') Brickell
+                  li(data-slug='Brickell Key|city') Brickell Key
+                  li(data-slug='Coconut Grove|city') Coconut Grove
+                  li(data-slug='Coral Gables|city') Coral Gables
+                  li(data-slug='Fisher Island|city') Fisher Island
+                  li(data-slug='Hollywood|city') Hollywood
+                  li(data-slug='Indian Creek|city') Indian Creek
+                  li(data-slug='Key Biscayne|city') Key Biscayne
+                  li(data-slug='Miami|city') Miami
+                  li(data-slug='Miami Beach|city') Miami Beach
+                  li(data-slug='Miami Shores|city') Miami Shores
+                  li(data-slug='North Miami|city') North Miami
+                  li(data-slug='North Miami Beach|city') North Miami Beach
+                  li(data-slug='Pembroke Pines|city') Pembroke Pines
+                  li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                  li(data-slug='Surfside|city') Surfside
+            li.end-item
+              a(href="#",title="Looking to Buy or Sell a Condo?",rel="nofollow").btn.btn-green Looking to Buy or Sell a Condo?
+          #all-filters
+            ul#mini-filters.hidden-sr
+              li.filter-box
+                .gwr
+                  h4.icon-arrow-select Property search
+                  .wrap-item
+                    ul.list-type-sr
+                      li: button#for-sale.active 
+                            span For sale
+                      li: button#for-rent 
+                            span For Rent
+                    input(type="search", placeholder="Select Area or Enter City, Zip, Condo Name or Keyword", id="autocomplete-ajax-min")
+                    .icon-search#submit-ms-min
+                      input(type="submit", value="Submit")
+              li.cities
+                .gwr
+                  h4.icon-arrow-select Choose cities
+                    span Aventura
+                  .wrap-item
+                    #cities-list
+                      ul
+                        li(data-slug='Aventura|city') Aventura
+                        li(data-slug='Bal Harbour|city').active Bal Harbour
+                        li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                        li(data-slug='Biscayne Park|city') Biscayne Park
+                        li(data-slug='Brickell|city') Brickell
+                        li(data-slug='Brickell Key|city') Brickell Key
+                        li(data-slug='Coconut Grove|city') Coconut Grove
+                        li(data-slug='Coral Gables|city') Coral Gables
+                        li(data-slug='Cutler Bay|city') Cutler Bay
+                        li(data-slug='Doral|city') Doral
+                        li(data-slug='Eastern Shores|city') Eastern Shores
+                        li(data-slug='El Portal|city') El Portal
+                        li(data-slug='Fisher Island|city') Fisher Island
+                        li(data-slug='Florida City|city') Florida City
+                        li(data-slug='Fort Lauderdale|city') Fort Lauderdale
+                        li(data-slug='Golden Beach|city') Golden Beach
+                        li(data-slug='Goulds|city') Goulds
+                        li(data-slug='Hialeah Gardens|city') Hialeah Gardens
+                        li(data-slug='Hollywood|city') Hollywood
+                        li(data-slug='Homestead|city') Homestead
+                        li(data-slug='Indian Creek|city') Indian Creek
+                        li(data-slug='Kendall|city') Kendall
+                        li(data-slug='Key Biscayne|city') Key Biscayne
+                        li(data-slug='Medley|city') Medley
+                        li(data-slug='Miami|city') Miami
+                        li(data-slug='Miami Beach|city') Miami Beach
+                        li(data-slug='Miami Gardens|city') Miami Gardens
+                        li(data-slug='Miami Lakes|city') Miami Lakes
+                        li(data-slug='Miami Shores|city') Miami Shores
+                        li(data-slug='Miami Springs|city') Miami Springs
+                        li(data-slug='North Bay Village|city') North Bay Village
+                        li(data-slug='North Miami|city') North Miami
+                        li(data-slug='North Miami Beach|city') North Miami Beach
+                        li(data-slug='Opa-Locka|city') Opa-Locka
+                        li(data-slug='Palmetto Bay|city') Palmetto Bay
+                        li(data-slug='Pembroke Pines|city') Pembroke Pines
+                        li(data-slug='Pinecrest|city') Pinecrest
+                        li(data-slug='South Miami|city') South Miami
+                        li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                        li(data-slug='Surfside|city') Surfside
+                        li(data-slug='Sweetwater|city') Sweetwater
+                        li(data-slug='Virginia Gardens|city') Virginia Gardens
+                        li(data-slug='West Miami|city') West Miami
+              li.price
+                .gwr
+                  h4.icon-arrow-select Price Range
+                  .wrap-item          
+                    .wrap-inputs
+                      input(id="price_from", type='text', name='', value="$0")
+                      span to
+                      input(id="price_to", type='text', name='', value="$50,000,000")
+                    .wrap-range
+                      #range-price.range-slide
+                    span.direct-results 
+                      label 4,109 
+                      |Properties
+              li.baths
+                .gwr
+                  h4.icon-arrow-select Bathrooms
+                  .wrap-item
+                    .wrap-range
+                      #range-baths.range-slide
+                    ul.markers-range
+                      each bath, a in ['Any', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5', '+']
+                        li #{bath}
+                    span.direct-results 
+                      label 4,109 
+                      |Properties
+              li.beds
+                .gwr
+                  h4.icon-arrow-select Bedrooms
+                  .wrap-item
+                    .wrap-range
+                      #range-beds.range-slide
+                    ul.markers-range
+                      each beds, e in ['Any', 'Studio', '1', '2', '3', '4', '5', '+']
+                        li #{beds}
+                    span.direct-results 
+                      label 4,109 
+                      |Properties  
+              li.type
+                .gwr
+                  h4.icon-arrow-select Property type
+                  .wrap-item
+                    .wrap-checks
+                      ul
+                        li
+                          input(type='checkbox', value='', id="first")
+                          label(for="first") Single Family Home
+                        li
+                          input(type='checkbox', value='', id="second")
+                          label(for="second") Condo / Townhome
+                        li
+                          input(type='checkbox', value='', id="third")
+                          label(for="third") Vacant Land
+              li.living
+                .gwr
+                  h4.icon-arrow-select Living size
+                  .wrap-item
+                    .wrap-inputs
+                      input(id="living_from", type='text', name='', value="0 SF")
+                      span to
+                      input(id="living_to", type='text', name='', value="9,000 SF")
+                    .wrap-range
+                      #range-living.range-slide
+              li.year
+                .gwr
+                  h4.icon-arrow-select Year Built
+                  .wrap-item
+                    .wrap-inputs
+                      input( id="year_from", type='text', name='', value="1961")
+                      span to
+                      input( id="year_to", type='text', name='', value="2021")
+                    .wrap-range
+                      #range-year.range-slide
+              li.waterfront
+                .gwr
+                  h4.icon-arrow-select Waterfront description
+                  .wrap-item
+                    .wrap-select.icon-arrow-select
+                      select
+                        each waterfront , w in ["Any", "Bay Front", "Canal", "Fixed Bridge", "Intracoastal", "Lake front", "Ocean acces", "Ocean Front", "Point lot", "River front"]
+                          option(value='') #{waterfront}
+              li.parking
+                .gwr
+                  h4.icon-arrow-select Parking spaces
+                  .wrap-item
+                    .wrap-select.icon-arrow-select
+                      select
+                        option(value='0') Any
+                        - for(p = 1; p < 4; p++)
+                          option(value='#{p}') #{p}
+                        option(value='+') 4+
+              li.land
+                .gwr
+                  h4.icon-arrow-select Land size
+                  .wrap-item
+                    .wrap-inputs
+                      input(id="land_from", type='text', name='', value="0 SF")
+                      span to
+                      input(id="land_to", type='text', name='', value="9,000 SF")
+                    .wrap-range
+                      #range-land.range-slide
+              li.features
+                .gwr
+                  h4.icon-arrow-select 
+                    label Features
+                    label Lifestyle
+                  .wrap-item
+                    .wrap-checks
+                      ul
+                        li
+                          input(type='checkbox', value='', id="check1")
+                          label(for="check1") Waterfront
+                        li
+                          input(type='checkbox', value='', id="check2")
+                          label(for="check2") Ocean Acces
+                        li
+                          input(type='checkbox', value='', id="check3")
+                          label(for="check3") Ocean Views
+                        li
+                          input(type='checkbox', value='', id="check4")
+                          label(for="check4") Tennis Courts
+                        li
+                          input(type='checkbox', value='', id="check5")
+                          label(for="check5") Swimming Poll
+                        li
+                          input(type='checkbox', value='', id="check6")
+                          label(for="check6") Golf Course
+                        li
+                          input(type='checkbox', value='', id="check7")
+                          label(for="check7") Guest House
+                        li
+                          input(type='checkbox', value='', id="check8")
+                          label(for="check8") Boat Dock
+                        li
+                          input(type='checkbox', value='', id="check9")
+                          label(for="check9") Covered Parking
+                        li
+                          input(type='checkbox', value='', id="check10")
+                          label(for="check10") Bated Community
+                        li
+                          input(type='checkbox', value='', id="check11")
+                          label(for="check11") Bated Lorem
+                        li
+                          input(type='checkbox', value='', id="check12")
+                          label(for="check12") Ipsum Community
+              li.action-filter
+                button#apply-filters-min Matching 
+                  span 29K 
+                  |Listings
+
+              button#apply-filters: span Apply Filters
+      #wrap-subfilters
+        .gwr
+          //span#title-subfilters
+            span Villa, Condo, Twnhouse in Fl from $100,000 to $1,500,000
+          ul#sub-filters
+            li#link-favorites
+              a(href="#", title="Save Favorites", rel="nofollow").icon-favorite
+                span
+                  span 0
+                  | Favorites
+            li.icon-arrow-select#filter-by
+              select
+                option(value="price-desc") Highest Price
+                option(value="price-asc") Lowest Price
+                option(value="bed-desc") Beds High to Low
+                option(value="bed-asc") Beds Low to High
+                option(value="size-desc") Size High to Low
+                option(value="size-asc") Size Low  to High 
+                option(value="year-newest") Year Newest
+                option(value="year-oldest") Year Oldest
+                option(value="newest-listed") Newest Listed
+                option(value="oldest-listed") Oldest Listed
+                option(value="#", selected="selected") Newest First
+            li.icon-arrow-select.grid#filter-views
+              select
+                option(value="grid", selected="selected") Grid
+                option(value="list") List
+                option(value="map") Map
+          //span#info-subfilters Showing 6 of 43 Properties
+            span Scroll down for more.
+      section#wrap-result.view-grid
+        h1.title Search results
+        .gwr
+          #wrap-list-result.special-list.new-construction
+            h2.condo-title Miami Beach - South of Fifth
+            ul.temp.head-list
+              li.n-name.md-1 Building Name
+              li.n-addres.md-2 Addres
+              li.n-unit Units
+              li.n-year Year
+              li.n-stattus New construsction
+              li.n-neighborhood Neighborhood
+            ul.temp.result-search.slider-generator
+              - for(b = 0; b < 8; b++)
+                  - var price = Math.floor(Math.random() * 101)
+                  li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                    h2.n-name(title="Aventura Park Square")
+                      span.blue-color Aventura Park Square
+                    ul.features
+                      li.n-address.md-2 
+                        span 2950 NE 207th st, Aventura FL 33180
+                      li.n-unit 421
+                      li.n-year 2017
+                      li.n-stattus New Construction
+                      li.n-neighborhood.md-2x 
+                        span Aventura
+                    .wrap-slider
+                      ul
+                        li
+                          img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+                      button.prev: span.icon-arrow-select
+                      button.next: span.icon-arrow-select
+                    button.btn-check: span.icon-check
+                    //a(href="javascript:void(0)", data-modal="modal_property_detail", data-position="0", rel="nofollow").view-detail.show-modal View detail
+          
+          #wrap-list-result.special-list         
+            h2.condo-title Miami Beach - South of Fifth
+            ul.head-list
+              li.address.md-1 Building Name
+              li.price.md-2 Price Range
+              li.unit Units
+              li.floors Floors
+              li.for-sale For Sale
+              li.for-rent For Rent
+              li.sold Sold 
+              li.development.md-2 Address
+            ul.result-search.slider-generator
+              - for(b = 0; b < 8; b++)
+                  - var price = Math.floor(Math.random() * 101)
+                  li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                    h2(title="Nombre completo de la dirección")
+                      span 151012 Collins Avenue Suit
+                    ul.features
+                      //li.house-type: h3 Condo For Sale
+                      li.address.md-hidden 
+                        span Miami, FL 33145 Miami, FL 33145
+                      li.price.md-2 $985K 
+                        span to 
+                        |$5M
+                      li.unit 421
+                      li.floors 32
+                      li.for-sale.md-bg 24 
+                        span For Sale
+                      li.for-rent 81 
+                        span For Rent
+                      li.sold 19 
+                        span Sold
+                      li.type.md-hidden: span Davis citrus Farms
+                      li.development.md-2: span Star Island Lorem Ipsum lorem
+                    .wrap-slider
+                      ul
+                        li
+                          img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+                      button.prev: span.icon-arrow-select
+                      button.next: span.icon-arrow-select
+                    button.btn-check: span.icon-check
+                    a(href="javascript:void(0)", data-modal="modal_property_detail", data-position="0", rel="nofollow").view-detail.show-modal View detail
+          
+          #wrap-map
+            #code-map
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28742.90968747849!2d-80.20231346071917!3d25.77506484106738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+Florida!5e0!3m2!1ses!2s!4v1490883858310", allowfullscreen)
+            #map-actions.show-message
+                #message-map 
+                  span Only showing 500 homes. 
+                  | Zoom in, or use filters to narrow your search.
+                #message-map
+                  span Only showing 500 homes. 
+                  | Zoom in, or use filters to narrow your search.
+                  a(href="javascript:void(0)")#close-drag Close
+                  a(href="javascript:void(0)")#apply-drag Apply
+                .content-map-btn-actions
+                  button.open-map Close
+                  button.close-map.hide Open
+      
+        .gwr
+          nav#nav-results
+            span#indicator Pag 1 of 467
+            a(href="#", title="First Page", rel="nofollow")#firstp.ad.visible
+              span.icon-arrow-select
+              span.icon-arrow-select
+              span First page
+            a(href="#", title="Prev Page", rel="nofollow")#prevn.arrow.icon-arrow-select.prevn.visible
+              span Previus page
+            ul#principal-nav
+              li: a(href='#', rel="nofollow") 1
+              li: a(href='#', rel="nofollow") 2
+              li.active: a(href='#', rel="nofollow") 3
+              li: a(href='#', rel="nofollow") 4
+              li: a(href='#', rel="nofollow") 5
+              li: a(href='#', rel="nofollow") 6
+              li: a(href='#', rel="nofollow") 7
+            span.points ...
+            ul#complementary-nav
+              li: a(href='#', rel="nofollow") 20
+              li: a(href='#', rel="nofollow") 30
+              li: a(href='#', rel="nofollow") 40
+            span.points ...
+            a(href="#", title="Prev Page", rel="nofollow")#nextn.arrow.icon-arrow-select.nextn.visible
+              span Next page
+            a(href="#", title="First Page", rel="nofollow")#lastp.ad.visible
+              span.icon-arrow-select
+              span.icon-arrow-select
+              span Last page
+      button(data-modal="modal_save_search").show-modal#save-button-responsive
+        span Save search
+
+    include ../footer.jade
+    #modal_property_detail.overlay_modal
+      .modal_cm.detail-modal
+        .property-details#md-body
+          #full-main
+            section.title-conteiner.gwr#md-title
+              h2.title-page 3085 Munroe Drive
+                span Biscayne Camp • Coconut Grove, Miami, FL, 33133
+              ul.options-modal
+                li
+                  a(href='#', title='View all detail').expand-btn Open
+                li
+                  button.close-btn.close-modal(data-frame="modal_fmobile", data-id="modal_property_detail") Close
+
+            .header-print
+              img(src="../images/logo-tremgroup.png", title="Tremgroup")
+              ul
+                li Call me: (305) 705 - 5000
+                li info@tremgroup.com
+            #imagen-print
+            #full-slider
+              .wrap-slider
+                ul
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_1.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_2.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_4.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_5.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_6.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_7.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_8.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_9.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_10.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_1.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_2.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+                  li: img(src='http://retsimages.s3.amazonaws.com/34/A10172834_3.jpg', title='#', alt='#')
+                button.prev: span.icon-arrow-select
+                button.next: span.icon-arrow-select
+              .moptions
+                ul.slider-option
+                  li
+                    button#show-gallery.option-switch(data-view="gallery") photos
+                  li
+                    button#show-map.option-switch(data-view="map") map view
+                #min-map(data-map-img="https://maps.googleapis.com/maps/api/staticmap?center=26.1151040,-80.1207070&zoom=14&size=163x87&maptype=roadmap&scale=false&format=png&key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&visual_refresh=true&markers=size:mid%7Ccolor:0x0684c8%7Clabel:%7C26.1151040,-80.1207070")
+                button.full-screen#btn-flight Full screen
+              #map-view
+                #map-result(data-lat="26.1151040", data-lng="-80.1207070")
+            section.main
+              h2.title-temp Property details information
+              .temporal-content
+              .gwr
+                .container
+                  ul.property-information
+                    li $5,900,000 
+                      span listing price 
+                        span.up-price 2.1%
+                    li 3 
+                      span Bedrooms
+                    li 2 
+                      span Bathrooms
+                    li 1 
+                      span Halfs Baths
+                    li 15,930 
+                      span size sq.ft
+                    li
+                      button.chk_save
+                        span save favorite 
+
+                  .panel-options
+                    a(href="#",title="Schedule a showing now", data-modal="modal_schedule", rel="nofollow").show-modal.btn.btn-blue#schedule-now Schedule a showing now
+                    
+                    .options-list
+                      .shared-content
+                        button#show-shared share
+                        ul.shared-list
+                          li: a(href="#", title="Faceboook", rel="nofollow").ico-facebook Faceboook
+                          li: a(href="#", title="Twitter", rel="nofollow").ico-twitter Twitter
+                          li: a(href="#", title="Youtube", rel="nofollow").ico-youtube Youtube
+                          li: a(href="#", title="Instagram", rel="nofollow").ico-instagram Instagram
+                      ul.action-list
+                        li: a(href="#",title="mortgage calculator",data-modal="modal_calculator",rel="nofollow").show-modal#calculator-mortgage.ico-calculator mortgage calculator
+                        li: a(href="#",title="email to a firend",data-modal="modal_email_to_friend",rel="nofollow").show-modal#email-friend.ico-envelope email to a friend
+                        li: a(href="#",title="print",rel="nofollow")#print-btn.ico-printer print
+                  
+                  .main-content
+                    .property-description#property-description
+                      p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+                    
+                    .list-details
+                      h2.title-details Property Details
+                      ul.list-detail
+                        li  
+                          span Property Type 
+                          span.up Single Family Home
+                        li  
+                          span Waterfront
+                          span Yes
+                        li
+                          span Swimming Pool
+                          span.down Yes
+                        li
+                          span Style
+                          span Ocean Access
+                        li
+                          span Construction
+                          span: a(href="#") CBS Construction
+                        li
+                          span Parking
+                          span Yes
+                        li
+                          span Parking Spaces
+                          span 2
+                        li
+                          span Flooring Type
+                          span Flooring Type
+                        li
+                          span MLS
+                          span WOOD FLOORS,MARBLE...
+                        li
+                          span Status
+                          span Active
+                        li
+                          span Sale Type
+                          span Regular Sale
+                        li
+                          span Date Listed
+                          span 05/12/2005
+                        li
+                          span Days on Market
+                          span 360
+                        li
+                          span Furnished
+                          span Furnished
+                        li
+                          span Subdivision
+                          span Cocoplum
+                        li
+                          span HOA Fees
+                          span $122
+                        li
+                          span Taxes
+                          span $387,233
+                        li
+                          span Taxes Year
+                          span 2014
+                    .list-details
+                      h2.title-amenities Amenities
+                      ul.list-amenities
+                        li Below Ground Pool
+                        li Boat Lift
+                        li Central AC
+                        li Breakfast Nook
+                        li Media / Recreation Room
+                        li Private dock
+                        li Dishwasher
+                        li Butlers Pantry
+                        li Formal Dining Room
+                        li Waterfront
+                        li Microwave
+                        li Fireplace
+                        li Library / Den
+                        li Water Views
+                        li Gas Stove
+                        li Wet Bar
+                        li Dryer
+                        li Detached Parking
+                        li Refrigerator
+                        li Hardwood Floors
+                        li Washer
+                        li Pool
+                        li Eat-in Kitchen
+                        li Marble Floors
+
+                    .property-contact
+                      .info-content
+                        p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+                        span IDX by: 
+                          a(href="#", title="FLEXIDX") FLEXIDX
+                .aside
+                  .form-content
+                    .avatar-content
+                      .content-avatar-image
+                        img(src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img.active
+                      .avatar-information
+                        h2 John Smith
+                        a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+                        a(href="#",title="More Information").view-more More Information
+                    form(action="", method="POST", id="form-request")
+                      .gform_body
+                        ul.gform_fields
+                          li.gfield
+                            label.gfield_label Name
+                            .ginput_container.ginput_container_text
+                              input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                          li.gfield
+                            label.gfield_label Email
+                            .ginput_container.ginput_container_email
+                              input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                          li.gfield
+                            label.gfield_label Phone
+                            .ginput_container.ginput_container_email
+                              input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                          li.gfield.comments
+                            label.gfield_label Comments
+                            .ginput_container
+                              textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                          li.gfield.requiredFields * Required Fields
+                          .gform_footer
+                            input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+
+                  .info-content
+                    p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+                    span IDX by: 
+                      a(href="#", title="FLEXIDX") FLEXIDX
+          #printMessageBox Please wait while we create your document
+      .overlay_modal_closer(data-frame="modal_fmobile", data-id="modal_property_detail")
+    aside#content-modals
+      #modal_save_search.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_save_search") Close
+          .content_md
+            .heder_md
+              h2 Save This Search
+            .body_md
+              .form_content
+                form(action="", method="POST", id="form-save")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield.field_sublabel_below Search Name(*)
+                      li.gfield
+                        label.gfield_label Search Name(*)
+                        .ginput_container
+                          input(name="input_sname", id="", type="text", value="", placeholder="Search Name*").medium
+                      li.gfield.field_sublabel_below Email Updates
+                      li.gfield
+                        label.gfield_label Email Updates
+                        .ginput_container
+                          select.medium
+                            each emailUpdates , w in ["No Alert", "Daily (each morning)", "Weekly"]
+                              option(value='') #{emailUpdates}
+                      li.gfield.field_sublabel_below Only Update Me On
+                      li.gfield
+                        label.gfield_label Only Update Me On
+                        .ginput_container
+                          ul.list-check
+                            li
+                              input(type="checkbox", id="new-listing", name="save-new-listing" checked="checked")
+                              label(for="new-listing") New Listing (Always)
+                            li
+                              input(type="checkbox", id="price-change", name="save-price-change")
+                              label(for="price-change") Price Changes
+                            li
+                              input(type="checkbox", id="status-change", name="save-status-change")
+                              label(for="status-change") status changes
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_5", value="Save Search").gform_button.button                
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_save_search")
+      #modal_email_to_friend.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_email_to_friend") Close
+          .content_md
+            .heder_md
+              h2 Email to a friend
+            .body_md
+              p Recomend this to a friend, just enter their email below
+              .form_content
+                form(action="", method="POST", id="form-email-friend")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield.field_sublabel_below Friends Information
+                      li.gfield
+                        label.gfield_label Friend email
+                        .ginput_container.ginput_container_email
+                          input(name="input_1", id="", type="email", value="", placeholder="Friend email*").medium
+                      li.gfield
+                        label.gfield_label Friend name
+                        .ginput_container.ginput_container_email
+                          input(name="input_2", id="", type="text", value="", placeholder="Friend name*").medium
+                      li.gfield.field_sublabel_below Your Information
+                      li.gfield
+                        label.gfield_label Your name
+                        .ginput_container.ginput_container_email
+                          input(name="input_3", id="", type="text", value="", placeholder="Your name*").medium
+                      li.gfield
+                        label.gfield_label Your email
+                        .ginput_container.ginput_container_email
+                          input(name="input_4", id="", type="email", value="", placeholder="Your email*").medium
+                      li.gfield.comments
+                        label.gfield_label Comments
+                        .ginput_container
+                          textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                      li.gfield.requiredFields * Required Fields
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_email_to_friend")
+      #modal_schedule.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_schedule") Close
+          .content_md
+            .heder_md
+              h2 Schedule a showing
+            .body_md
+              .msg 441 Dilido Island, Miami Beach Fl 33145
+              .form_content
+                
+                form(action="", method="POST", id="form-scheduled")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_1", id="", type="text", value="", placeholder="Name").medium
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_2", id="", type="email", value="", placeholder="Email").medium
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_3", id="", type="text", value="", placeholder="Phone number").medium
+                      li.gfield.comments
+                        .ginput_container
+                          textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea Comments
+                      li.gfield.field_sublabel_below Prefered Time and Date
+                      li.gfield.time
+                        .ginput_container.ginput_container_time
+                          select.medium
+                            option 10:00 AM
+                            option 11:00 AM
+                      li.gfield.date
+                        .ginput_container.ginput_container_date 
+                          select.medium
+                            option Select Date
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_schedule")
+      #modal_calculator.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_calculator") Close
+          .content_md
+            .heder_md
+              h2 Mortgage calculator
+            .body_md
+              p Let’s us know the best time for showing.
+              ul.contact-opt
+                li: a(href="tel:3057055000") (305) 705 - 5000
+                li: a(href="mailto:info@tremgroup.com") info@tremgroup.com
+              .form_content
+                form(action="", method="POST", id="form-calculator")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield
+                        label.gfield_label Purchase Price
+                        .ginput_container.ginput_container_email
+                          input(name="input_1", id="", type="text", value="$410,000").medium
+                      li.gfield
+                        label.gfield_label % Down Payment
+                        .ginput_container.ginput_container_payment
+                          input(name="input_2", id="", type="text", value="20").medium
+                      li.gfield
+                        label.gfield_label Term
+                        .ginput_container.ginput_container_years
+                          select.medium
+                            option 30 Years
+                            option 20 Years
+                      li.gfield
+                        label.gfield_label Interest Rate
+                        .ginput_container.ginput_container_rate
+                          input(name="input_3", id="", type="text", value="4.25").medium
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_5", value="Calculate").gform_button.button
+              .detail-mortgage
+                h3 Mortgage breakdown
+                ul
+                  li
+                    span Mortgage Amount
+                    span.text-bold $328,000.00
+                  li
+                    span Down Payment Amount
+                    span.text-bold $82,000.00
+                  li.line-top
+                    span Mortgage Amount
+                    span.text-bold.mtotal $328,000.00
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_calculator")
+      #modal_login.overlay_modal
+        .login-modal
+          .img_modal
+            img.lazy-img(data-src='../images/loginavatar.jpg')             
+          #content-info-modal
+            .modal_cm.social_items
+              button.close.close-modal(data-frame="modal_mobile", data-id="modal_login") Close
+              .content_md
+                .heder_md
+                  h2 Welcome back
+                .body_md
+                  p.text-slogan Sign in below
+                  ul.contact-opt
+                    li
+                      a(href='tel:3057055000') (305) 705 - 5000
+                    li
+                      a(href='mailto:info@tremgroup.com') info@tremgroup.com
+                  ul.header-tab
+                    li
+                      a.active(href='javascript:void(0)', title='Sign in', data-tab='tabLogin') Sign in
+                    li
+                      a(href='javascript:void(0)', title='Register', data-tab='tabRegister') Register
+                    li
+                      a(href='javascript:void(0)', title='Reset Password', data-tab='tabReset') Reset Password
+                  #tabLogin.item_tab.active
+                    .form_content
+                      form#formLogin(name='formLogin', method='POST', action='')
+                        ul#cntLoginForm.form_md
+                          li.form_input
+                            input#txt_user(type='email', name='user_name', placeholder='Enter email')
+                          li.form_input
+                            input#txt_pwd(type='password', name='user_pass', placeholder='Enter password')
+                        button#btn-user-login.btn_form(type='submit') Sign in
+                  #tabRegister.item_tab
+                    .form_content
+                      form#formRegister(name='formRegister', method='POST', action='')
+                        ul#cntRegisterForm.form_md
+                          li.form_input
+                            input#register_email(type='email', name='register_email', placeholder='Enter email')
+                          li.form_input
+                            input#register_name(type='text', name='register_name', placeholder='Name')
+                          li.form_input
+                            input#register_phone(type='text', name='register_phone', placeholder='Phone number')
+                          li.form_input
+                            input#register_password(type='password', name='register_password', placeholder='Create password')
+                            span.desc The password must be greater than 8 characters
+                        button#btn-user-register.btn_form(type='submit') Register
+                  #tabReset.item_tab
+                    .form_content
+                      form#formReset(name='formReset', method='POST', action='')
+                        p Enter you email address and we&apos;ll send you a link to your password                                
+                        ul#cntResetForm.form_md
+                          li.form_input
+                            input#reset_email(type='email', name='reset_email', placeholder='Enter E-mail')                                            
+                        button#btn-user-reset.btn_form(type='submit') Send
+                  ul.terms-opt
+                    li
+                      span I accept 
+                      a(href='#', title='Terms of use') Terms of use
+                .footer_md
+                  ul.social_login
+                    li Or sign in with
+                    li
+                      a.ico-facebook(href='#', title='Facebook') Facebook
+                    li
+                      a.ico-google(href='#', title='Google+') Google+
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_login") 
+      #modal_img_propertie
+        .bg-black
+        h4.title Off Market: 
+          span % (% beds, % baths, % sqft)
+        ul.actions-buttons
+          li.save-home: a(href="#", title="#") Save Home
+          li.save-img: a(href="#") Save image
+          li.close-modal: button: span.icon-close Close
+        .wrapper-img
+          span.numeration
+            span 1 
+            | of 
+            span 21
+          img.img(src="https://photos.zillowstatic.com/p_f/ISli4mp90fiwvl0000000000.jpg", title="#", alt="#")
+        button.prev.nav.opacity: span.icon-arrow-select
+        button.next.nav: span.icon-arrow-select  
+
+      #modal_add_favorities.overlay_modal
+        .modal_cm.message_pop
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_add_favorities") Close
+          .content_md
+            .body_md
+              h2.ico_ok Building added to favorites!
+              p You can see your saved buildings
+                br
+                | under your account
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_add_favorities") 
+
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&#038")
+    script(type="text/javascript", src="../js/dgt-master.min.js")
+    

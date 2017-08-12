@@ -1,0 +1,313 @@
+doctype html
+html(lang='en')
+	head
+		title Home | Master Elite 2017
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		//meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+		meta(name="theme-color", content="#0073AC")
+		meta(name="msapplication-navbutton-color", content="#0073AC")
+		link(rel="shortcut icon", type="image/x-icon", href="images/icons/favicon.ico")
+		link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+		link(rel="stylesheet", href="../css/main.css")
+body
+	header#header
+			.wrap-options
+					.gwr
+							ul#user-options
+									li.login.icon-login: a(href="#", title="#") Sign in
+									li.register: a(href="#", title="#") Register
+							ul.social-networks
+									li.icon-facebook: a(href="#", title="#", target="_blank") Facebook
+									li.icon-twitter: a(href="#", title="#", target="_blank") Twitter
+									li.icon-google-plus: a(href="#", title="#", target="_blank") Google+
+									li.icon-instagram: a(href="#", title="#", target="_blank") Instagram
+									li.icon-linkedin: a(href="#", title="#", target="_blank") Linked In
+							ul#available-languages
+									li.english.active
+											span EN
+											button(data-iso="us", title="English") English
+									li.russian
+											span RU
+											button(data-iso="ru", title="Russian") Pусский
+									li.spanish
+											span ES
+											button(data-iso="es", title="#") Spanish
+									li.portuguese
+											span BR
+											button(data-iso="br", title="#") Português
+									li.french
+											span FR
+											button(data-iso="fr", title="#") Français
+									li.italy
+											span IT
+											button(data-iso="it", title="#") Italy
+									li.german
+											span DE
+											button(data-iso="de", title="#") Deutsch
+									li.chinese
+											span ZH
+											button(data-iso="zh", title="#") 中文
+							a(href="tel:305.705.5000", title="Call Us")#call-us Call Us: 305.705.5000
+			.wrap-menu
+					.gwr
+							a(href="#", title="#").title
+									img.logo(src="../images/logo.png", title="logo", alt="Tremgroup")
+							nav
+									ul
+											li.current-menu-item: a(href="#", title="#") Search
+											li.menu-item-has-children
+													a(href="http://www.google.com", title="#") Neighborhoods
+													ul
+															li: a(href="#", title="#") All Neighborhoods
+															li: a(href="#", title="#") Allison Island
+															li: a(href="#", title="#") Aventura
+															li: a(href="#", title="#") Bal Harbour
+															li: a(href="#", title="#") Bay Harbor Islands
+															li: a(href="#", title="#") Bay Point
+											li.menu-item-has-children
+													a(href="http://www.google.com", title="#") Buildings
+													ul
+															li: a(href="#", title="#") All Buildings
+															li: a(href="#", title="#") Aventura
+															li: a(href="#", title="#") Bal Harbour
+															li: a(href="#", title="#") Brickell/ Brickell Key
+															li: a(href="#", title="#") Coconut Grove
+											li: a(href="#", title="#") New Construction
+											li: a(href="#", title="#") My Listings
+											li: a(href="#", title="#") About
+											li: a(href="#", title="#") News
+											li: a(href="#", title="#") Testimonials
+											li: a(href="#", title="#") Contact
+							button#hamburger
+									span Menu responsive
+	h1.gwr.gTitle Advanced Search
+	#quick-search.property-search.gwr
+		// se agrega al ul la clase 'hidden-sr' para q se esconda el 'for rent | for sell'
+		ul#mini-filters
+			li.filter-box
+				.gwr
+					h4.icon-arrow-select Property search
+					.wrap-item
+						ul.list-type-sr
+							li: button#for-sale.active 
+										span For sale
+							li: button#for-rent 
+										span For Rent
+						input(type="search", placeholder="Select Area or Enter City, Zip, Condo Name or Keyword", id="autocomplete-ajax-min")
+						.icon-search#submit-ms-min
+							input(type="submit", value="Submit")
+			li.cities
+				.gwr
+					h4.icon-arrow-select Choose cities
+						span Aventura
+					.wrap-item
+						#cities-list
+							ul
+								li(data-slug='Aventura|city') Aventura
+								li(data-slug='Bal Harbour|city') Bal Harbour
+								li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+								li(data-slug='Biscayne Park|city') Biscayne Park
+								li(data-slug='Brickell|city') Brickell
+								li(data-slug='Brickell Key|city') Brickell Key
+								li(data-slug='Coconut Grove|city') Coconut Grove
+								li(data-slug='Coral Gables|city') Coral Gables
+								li(data-slug='Cutler Bay|city') Cutler Bay
+								li(data-slug='Doral|city') Doral
+								li(data-slug='Eastern Shores|city') Eastern Shores
+								li(data-slug='El Portal|city') El Portal
+								li(data-slug='Fisher Island|city') Fisher Island
+								li(data-slug='Florida City|city') Florida City
+								li(data-slug='Fort Lauderdale|city') Fort Lauderdale
+								li(data-slug='Golden Beach|city') Golden Beach
+								li(data-slug='Goulds|city') Goulds
+								li(data-slug='Hialeah Gardens|city') Hialeah Gardens
+								li(data-slug='Hollywood|city') Hollywood
+								li(data-slug='Homestead|city') Homestead
+								li(data-slug='Indian Creek|city') Indian Creek
+								li(data-slug='Kendall|city') Kendall
+								li(data-slug='Key Biscayne|city') Key Biscayne
+								li(data-slug='Medley|city') Medley
+								li(data-slug='Miami|city') Miami
+								li(data-slug='Miami Beach|city') Miami Beach
+								li(data-slug='Miami Gardens|city') Miami Gardens
+								li(data-slug='Miami Lakes|city') Miami Lakes
+								li(data-slug='Miami Shores|city') Miami Shores
+								li(data-slug='Miami Springs|city') Miami Springs
+								li(data-slug='North Bay Village|city') North Bay Village
+								li(data-slug='North Miami|city') North Miami
+								li(data-slug='North Miami Beach|city') North Miami Beach
+								li(data-slug='Opa-Locka|city') Opa-Locka
+								li(data-slug='Palmetto Bay|city') Palmetto Bay
+								li(data-slug='Pembroke Pines|city') Pembroke Pines
+								li(data-slug='Pinecrest|city') Pinecrest
+								li(data-slug='South Miami|city') South Miami
+								li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+								li(data-slug='Surfside|city') Surfside
+								li(data-slug='Sweetwater|city') Sweetwater
+								li(data-slug='Virginia Gardens|city') Virginia Gardens
+								li(data-slug='West Miami|city') West Miami
+			li.price
+				.gwr
+					h4.icon-arrow-select Price Range
+					.wrap-item          
+						.wrap-inputs
+							input(id="price_from", type='text', name='', value="$0")
+							span to
+							input(id="price_to", type='text', name='', value="$50,000,000")
+						.wrap-range
+							#range-price.range-slide
+						span.direct-results 
+							label 4,109 
+							|Properties
+			li.baths
+				.gwr
+					h4.icon-arrow-select Bathrooms
+					.wrap-item
+						.wrap-range
+							#range-baths.range-slide
+						ul.markers-range
+							each bath, a in ['Any', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5', '+']
+								li #{bath}
+						span.direct-results 
+							label 4,109 
+							|Properties
+			li.beds
+				.gwr
+					h4.icon-arrow-select Bedrooms
+					.wrap-item
+						.wrap-range
+							#range-beds.range-slide
+						ul.markers-range
+							each beds, e in ['Any', 'Studio', '1', '2', '3', '4', '5', '+']
+								li #{beds}
+						span.direct-results 
+							label 4,109 
+							|Properties  
+			li.type
+				.gwr
+					h4.icon-arrow-select Property type
+					.wrap-item
+						.wrap-checks
+							ul
+								li
+									input(type='checkbox', value='', id="first")
+									label(for="first") Single Family Home
+								li
+									input(type='checkbox', value='', id="second")
+									label(for="second") Condo / Townhome
+								li
+									input(type='checkbox', value='', id="third")
+									label(for="third") Vacant Land
+			li.living
+				.gwr
+					h4.icon-arrow-select Living size
+					.wrap-item
+						.wrap-inputs
+							input(id="living_from", type='text', name='', value="0 SF")
+							span to
+							input(id="living_to", type='text', name='', value="9,000 SF")
+						.wrap-range
+							#range-living.range-slide
+			li.year
+				.gwr
+					h4.icon-arrow-select Year Built
+					.wrap-item
+						.wrap-inputs
+							input( id="year_from", type='text', name='', value="1961")
+							span to
+							input( id="year_to", type='text', name='', value="2021")
+						.wrap-range
+							#range-year.range-slide
+			li.waterfront
+				.gwr
+					h4.icon-arrow-select Waterfront description
+					.wrap-item
+						.wrap-select.icon-arrow-select
+							select
+								each waterfront , w in ["Any", "Bay Front", "Canal", "Fixed Bridge", "Intracoastal", "Lake front", "Ocean acces", "Ocean Front", "Point lot", "River front"]
+									option(value='') #{waterfront}
+			li.parking
+				.gwr
+					h4.icon-arrow-select Parking spaces
+					.wrap-item
+						.wrap-select.icon-arrow-select
+							select
+								option(value='0') Any
+								- for(p = 1; p < 4; p++)
+									option(value='#{p}') #{p}
+								option(value='+') 4+
+			li.land
+				.gwr
+					h4.icon-arrow-select Land size
+					.wrap-item
+						.wrap-inputs
+							input(id="land_from", type='text', name='', value="0 SF")
+							span to
+							input(id="land_to", type='text', name='', value="9,000 SF")
+						.wrap-range
+							#range-land.range-slide
+			li.features
+				.gwr
+					h4.icon-arrow-select 
+						label Features
+						label Lifestyle
+					.wrap-item
+						.wrap-checks
+							ul
+								li
+									input(type='checkbox', value='', id="check1")
+									label(for="check1") Waterfront
+								li
+									input(type='checkbox', value='', id="check2")
+									label(for="check2") Ocean Acces
+								li
+									input(type='checkbox', value='', id="check3")
+									label(for="check3") Ocean Views
+								li
+									input(type='checkbox', value='', id="check4")
+									label(for="check4") Tennis Courts
+								li
+									input(type='checkbox', value='', id="check5")
+									label(for="check5") Swimming Poll
+								li
+									input(type='checkbox', value='', id="check6")
+									label(for="check6") Golf Course
+								li
+									input(type='checkbox', value='', id="check7")
+									label(for="check7") Guest House
+								li
+									input(type='checkbox', value='', id="check8")
+									label(for="check8") Boat Dock
+								li
+									input(type='checkbox', value='', id="check9")
+									label(for="check9") Covered Parking
+								li
+									input(type='checkbox', value='', id="check10")
+									label(for="check10") Bated Community
+								li
+									input(type='checkbox', value='', id="check11")
+									label(for="check11") Bated Lorem
+								li
+									input(type='checkbox', value='', id="check12")
+									label(for="check12") Ipsum Community
+			li.action-filter
+				button#apply-filters-min Matching 
+					span 29K 
+					|Listings
+			button#apply-filters: span Apply Filters
+
+
+	footer#footer
+			.gwr
+					p Master Elite All rights reserved 2017 ©
+					span.info-trem Design  +  Powered by 
+							a(href="http://www.tremgroup.com/", target="_blank", title="Trem Group") trem
+									span group
+	script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+	script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+	script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+	script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+	script(type="text/javascript", src="../js/dgt-master.min.js")

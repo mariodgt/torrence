@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Master Elite 2017</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0073AC">
+    <meta name="theme-color" content="#0073AC">
+    <meta name="msapplication-navbutton-color" content="#0073AC">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <link rel="stylesheet" href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+</html>
+<body>
+  <header id="header">
+    <div class="wrap-options">
+      <div class="gwr">
+        <ul id="user-options">
+          <li class="login icon-login"><a href="#" title="#">Sign in</a></li>
+          <li class="register"><a href="#" title="#">Register</a></li>
+        </ul>
+        <ul class="social-networks">
+          <li class="icon-facebook"><a href="#" title="#" target="_blank">Facebook</a></li>
+          <li class="icon-twitter"><a href="#" title="#" target="_blank">Twitter</a></li>
+          <li class="icon-google-plus"><a href="#" title="#" target="_blank">Google+</a></li>
+          <li class="icon-instagram"><a href="#" title="#" target="_blank">Instagram</a></li>
+          <li class="icon-linkedin"><a href="#" title="#" target="_blank">Linked In</a></li>
+        </ul>
+        <ul id="available-languages">
+          <li class="english active"><span>EN</span>
+            <button data-iso="us" title="English">English</button>
+          </li>
+          <li class="russian"><span>RU</span>
+            <button data-iso="ru" title="Russian">Pусский</button>
+          </li>
+          <li class="spanish"><span>ES</span>
+            <button data-iso="es" title="#">Spanish</button>
+          </li>
+          <li class="portuguese"><span>BR</span>
+            <button data-iso="br" title="#">Português</button>
+          </li>
+          <li class="french"><span>FR</span>
+            <button data-iso="fr" title="#">Français</button>
+          </li>
+          <li class="italy"><span>IT</span>
+            <button data-iso="it" title="#">Italy</button>
+          </li>
+          <li class="german"><span>DE</span>
+            <button data-iso="de" title="#">Deutsch</button>
+          </li>
+          <li class="chinese"><span>ZH</span>
+            <button data-iso="zh" title="#">中文</button>
+          </li>
+        </ul><a href="tel:305.705.5000" title="Call Us" id="call-us">Call Us: 305.705.5000</a>
+      </div>
+    </div>
+    <div class="wrap-menu">
+      <div class="gwr"><a class="title" href="#" title="#"><img class="logo" src="../images/logo.png" title="logo" alt="Tremgroup"></a>
+        <nav>
+          <ul>
+            <li class="current-menu-item"><a href="#" title="#">Search</a></li>
+            <li class="menu-item-has-children"><a href="http://www.google.com" title="#">Neighborhoods</a>
+              <ul>
+                <li><a href="#" title="#">All Neighborhoods</a></li>
+                <li><a href="#" title="#">Allison Island</a></li>
+                <li><a href="#" title="#">Aventura</a></li>
+                <li><a href="#" title="#">Bal Harbour</a></li>
+                <li><a href="#" title="#">Bay Harbor Islands</a></li>
+                <li><a href="#" title="#">Bay Point</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="http://www.google.com" title="#">Buildings</a>
+              <ul>
+                <li><a href="#" title="#">All Buildings</a></li>
+                <li><a href="#" title="#">Aventura</a></li>
+                <li><a href="#" title="#">Bal Harbour</a></li>
+                <li><a href="#" title="#">Brickell/ Brickell Key</a></li>
+                <li><a href="#" title="#">Coconut Grove</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="#">New Construction</a></li>
+            <li><a href="#" title="#">My Listings</a></li>
+            <li><a href="#" title="#">About</a></li>
+            <li><a href="#" title="#">News</a></li>
+            <li><a href="#" title="#">Testimonials</a></li>
+            <li><a href="#" title="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="hamburger"><span>Menu responsive</span></button>
+      </div>
+    </div>
+  </header>
+  <h1 class="gwr gTitle">Advanced Search</h1>
+  <div class="property-search gwr" id="quick-search">
+    <!-- se agrega al ul la clase 'hidden-sr' para q se esconda el 'for rent | for sell'-->
+    <ul id="mini-filters">
+      <li class="filter-box">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Property search</h4>
+          <div class="wrap-item">
+            <ul class="list-type-sr">
+              <li>
+                <button class="active" id="for-sale"> <span>For sale</span></button>
+              </li>
+              <li>
+                <button id="for-rent"> <span>For Rent</span></button>
+              </li>
+            </ul>
+            <input type="search" placeholder="Select Area or Enter City, Zip, Condo Name or Keyword" id="autocomplete-ajax-min">
+            <div class="icon-search" id="submit-ms-min">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="cities">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Choose cities<span>Aventura</span></h4>
+          <div class="wrap-item">
+            <div id="cities-list">
+              <ul>
+                <li data-slug="Aventura|city">Aventura</li>
+                <li data-slug="Bal Harbour|city">Bal Harbour</li>
+                <li data-slug="Bay Harbor Islands|city">Bay Harbor Islands</li>
+                <li data-slug="Biscayne Park|city">Biscayne Park</li>
+                <li data-slug="Brickell|city">Brickell</li>
+                <li data-slug="Brickell Key|city">Brickell Key</li>
+                <li data-slug="Coconut Grove|city">Coconut Grove</li>
+                <li data-slug="Coral Gables|city">Coral Gables</li>
+                <li data-slug="Cutler Bay|city">Cutler Bay</li>
+                <li data-slug="Doral|city">Doral</li>
+                <li data-slug="Eastern Shores|city">Eastern Shores</li>
+                <li data-slug="El Portal|city">El Portal</li>
+                <li data-slug="Fisher Island|city">Fisher Island</li>
+                <li data-slug="Florida City|city">Florida City</li>
+                <li data-slug="Fort Lauderdale|city">Fort Lauderdale</li>
+                <li data-slug="Golden Beach|city">Golden Beach</li>
+                <li data-slug="Goulds|city">Goulds</li>
+                <li data-slug="Hialeah Gardens|city">Hialeah Gardens</li>
+                <li data-slug="Hollywood|city">Hollywood</li>
+                <li data-slug="Homestead|city">Homestead</li>
+                <li data-slug="Indian Creek|city">Indian Creek</li>
+                <li data-slug="Kendall|city">Kendall</li>
+                <li data-slug="Key Biscayne|city">Key Biscayne</li>
+                <li data-slug="Medley|city">Medley</li>
+                <li data-slug="Miami|city">Miami</li>
+                <li data-slug="Miami Beach|city">Miami Beach</li>
+                <li data-slug="Miami Gardens|city">Miami Gardens</li>
+                <li data-slug="Miami Lakes|city">Miami Lakes</li>
+                <li data-slug="Miami Shores|city">Miami Shores</li>
+                <li data-slug="Miami Springs|city">Miami Springs</li>
+                <li data-slug="North Bay Village|city">North Bay Village</li>
+                <li data-slug="North Miami|city">North Miami</li>
+                <li data-slug="North Miami Beach|city">North Miami Beach</li>
+                <li data-slug="Opa-Locka|city">Opa-Locka</li>
+                <li data-slug="Palmetto Bay|city">Palmetto Bay</li>
+                <li data-slug="Pembroke Pines|city">Pembroke Pines</li>
+                <li data-slug="Pinecrest|city">Pinecrest</li>
+                <li data-slug="South Miami|city">South Miami</li>
+                <li data-slug="Sunny Isles Beach|city">Sunny Isles Beach</li>
+                <li data-slug="Surfside|city">Surfside</li>
+                <li data-slug="Sweetwater|city">Sweetwater</li>
+                <li data-slug="Virginia Gardens|city">Virginia Gardens</li>
+                <li data-slug="West Miami|city">West Miami</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="price">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Price Range</h4>
+          <div class="wrap-item">         
+            <div class="wrap-inputs">
+              <input id="price_from" type="text" name="" value="$0"><span>to</span>
+              <input id="price_to" type="text" name="" value="$50,000,000">
+            </div>
+            <div class="wrap-range">
+              <div class="range-slide" id="range-price"></div>
+            </div><span class="direct-results"> 
+              <label>4,109 </label>Properties</span>
+          </div>
+        </div>
+      </li>
+      <li class="baths">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Bathrooms</h4>
+          <div class="wrap-item">
+            <div class="wrap-range">
+              <div class="range-slide" id="range-baths"></div>
+            </div>
+            <ul class="markers-range">
+              <li>Any</li>
+              <li>1</li>
+              <li>1.5</li>
+              <li>2</li>
+              <li>2.5</li>
+              <li>3</li>
+              <li>3.5</li>
+              <li>4</li>
+              <li>4.5</li>
+              <li>5</li>
+              <li>+</li>
+            </ul><span class="direct-results"> 
+              <label>4,109 </label>Properties</span>
+          </div>
+        </div>
+      </li>
+      <li class="beds">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Bedrooms</h4>
+          <div class="wrap-item">
+            <div class="wrap-range">
+              <div class="range-slide" id="range-beds"></div>
+            </div>
+            <ul class="markers-range">
+              <li>Any</li>
+              <li>Studio</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>+</li>
+            </ul><span class="direct-results"> 
+              <label>4,109 </label>Properties  </span>
+          </div>
+        </div>
+      </li>
+      <li class="type">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Property type</h4>
+          <div class="wrap-item">
+            <div class="wrap-checks">
+              <ul>
+                <li>
+                  <input type="checkbox" value="" id="first">
+                  <label for="first">Single Family Home</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="second">
+                  <label for="second">Condo / Townhome</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="third">
+                  <label for="third">Vacant Land</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="living">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Living size</h4>
+          <div class="wrap-item">
+            <div class="wrap-inputs">
+              <input id="living_from" type="text" name="" value="0 SF"><span>to</span>
+              <input id="living_to" type="text" name="" value="9,000 SF">
+            </div>
+            <div class="wrap-range">
+              <div class="range-slide" id="range-living"></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="year">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Year Built</h4>
+          <div class="wrap-item">
+            <div class="wrap-inputs">
+              <input id="year_from" type="text" name="" value="1961"><span>to</span>
+              <input id="year_to" type="text" name="" value="2021">
+            </div>
+            <div class="wrap-range">
+              <div class="range-slide" id="range-year"></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="waterfront">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Waterfront description</h4>
+          <div class="wrap-item">
+            <div class="wrap-select icon-arrow-select">
+              <select>
+                <option value="">Any</option>
+                <option value="">Bay Front</option>
+                <option value="">Canal</option>
+                <option value="">Fixed Bridge</option>
+                <option value="">Intracoastal</option>
+                <option value="">Lake front</option>
+                <option value="">Ocean acces</option>
+                <option value="">Ocean Front</option>
+                <option value="">Point lot</option>
+                <option value="">River front</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="parking">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Parking spaces</h4>
+          <div class="wrap-item">
+            <div class="wrap-select icon-arrow-select">
+              <select>
+                <option value="0">Any</option>
+                <option value="#{p}">1</option>
+                <option value="#{p}">2</option>
+                <option value="#{p}">3</option>
+                <option value="+">4+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="land">
+        <div class="gwr">
+          <h4 class="icon-arrow-select">Land size</h4>
+          <div class="wrap-item">
+            <div class="wrap-inputs">
+              <input id="land_from" type="text" name="" value="0 SF"><span>to</span>
+              <input id="land_to" type="text" name="" value="9,000 SF">
+            </div>
+            <div class="wrap-range">
+              <div class="range-slide" id="range-land"></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="features">
+        <div class="gwr">
+          <h4 class="icon-arrow-select"> 
+            <label>Features</label>
+            <label>Lifestyle</label>
+          </h4>
+          <div class="wrap-item">
+            <div class="wrap-checks">
+              <ul>
+                <li>
+                  <input type="checkbox" value="" id="check1">
+                  <label for="check1">Waterfront</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check2">
+                  <label for="check2">Ocean Acces</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check3">
+                  <label for="check3">Ocean Views</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check4">
+                  <label for="check4">Tennis Courts</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check5">
+                  <label for="check5">Swimming Poll</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check6">
+                  <label for="check6">Golf Course</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check7">
+                  <label for="check7">Guest House</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check8">
+                  <label for="check8">Boat Dock</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check9">
+                  <label for="check9">Covered Parking</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check10">
+                  <label for="check10">Bated Community</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check11">
+                  <label for="check11">Bated Lorem</label>
+                </li>
+                <li>
+                  <input type="checkbox" value="" id="check12">
+                  <label for="check12">Ipsum Community</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="action-filter">
+        <button id="apply-filters-min">Matching <span>29K </span>Listings</button>
+      </li>
+      <button id="apply-filters"><span>Apply Filters</span></button>
+    </ul>
+  </div>
+  <footer id="footer">
+    <div class="gwr">
+      <p>Master Elite All rights reserved 2017 ©</p><span class="info-trem">Design  +  Powered by <a href="http://www.tremgroup.com/" target="_blank" title="Trem Group">trem<span>group</span></a></span>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="../js/dgt-master.min.js"></script>
+</body>

@@ -1,0 +1,225 @@
+.gTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 20px;
+  padding: 12px 0 8px 0;
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.875rem;
+  }
+}
+
+#blog-collection {
+  #articles-blog {
+    li {
+      border: 1px solid #CCCCCC;
+      position: relative;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      time {
+        background: $colorweb;
+        color: #fff;
+        display: inline-block;
+        padding: 12px;
+        position: absolute;
+        left: 20px;
+        top: -12px;
+        width: 60px;
+        text-transform: uppercase;
+        font-size: 12px;
+        span {
+          display: block;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      h3 {
+        font-weight: normal;
+        padding: 12px;
+        text-align: center;
+      }
+      .readmore {
+        display: inline-block;
+        padding: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover {
+          color: $colorweb;
+        }
+      }
+    }
+  }
+  aside,
+  .aside {
+    .widget {
+      border: solid 1px #ccc;
+      padding: 20px;
+      margin-bottom: 30px;
+      h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #eee;
+        margin-bottom: 15px;
+      }
+      &.search {
+          form {
+            position: relative;
+            input {
+              width: 100%;
+              border: solid 1px #ccc;
+              padding: 10px;
+              font-size: 14px;
+              padding-right: 50px;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+            button {
+              position: absolute;
+              padding: 11px 12px 8px 12px;
+              right: 0;
+              top: 0;
+              background-color: $colorweb;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+              color: #fff;
+              transition: all .3s;
+              &:hover {
+                  background-color: $colorhover;
+              }
+            }
+          }
+      }
+      ul {
+        li {
+          a {
+            display: block;
+            padding: 6px 0;
+            &:hover {
+              color: $colorweb;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 640px) {
+    #articles-blog {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      /*justify-content: space-between;*/
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    #articles-blog {
+      li {
+        width: 48.36188183955102%;
+        margin-right: 3.261615286853441%;
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+        img{
+          max-height: 200px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #articles-blog {
+      li {
+        width: 100%;
+        img{
+          max-height: 100%;
+        }
+      }
+    }
+    .paginator {
+      #nav-results #indicator {
+        display: none;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    #articles-blog {
+      li {
+        width: 48.36188183955102%;
+        margin-right: 3.261615286853441%;
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+        img{
+          max-height: 200px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+    .rigted {
+      width: 68%;
+      order: 2
+    }
+    aside {
+      width: 30%;
+      order: 1
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    aside {
+      width: 23%;
+    }
+    .rigted {
+      width: 75%;
+    }
+    #articles-blog {
+      li {
+        width: 30.74772886093641%;
+        margin-right: 3.820172373631493%;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+        img{
+          max-height: 200px;
+        }
+      }
+    }
+  }
+}
+
+.blog-detail {
+  .rigted {
+    article {
+      p {
+        margin-bottom: 25px;
+        text-align: justify;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    article {
+      p {
+        line-height: 26px;
+      }
+    }
+  }
+}

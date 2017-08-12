@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+	head
+	title Blog Detail
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+	//meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+	meta(name="apple-mobile-web-app-capable", content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+	meta(name="theme-color", content="#0073AC")
+	meta(name="msapplication-navbutton-color", content="#0073AC")
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+
+	body
+		include ../header.jade
+		main.blog
+			.gwr
+				h1.gTitle Hire A Top Producer An Get A Sought After Home Staging Expert For Free!
+			#blog-collection.gwr.blog-detail
+
+				.rigted
+
+					article
+						img(src="../images/header-blog-detail.jpg", alt="")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam architecto nesciunt voluptatem expedita eum reiciendis consequatur ipsa, minima numquam voluptate excepturi aliquam atque alias, recusandae possimus illo totam accusamus similique!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi cumque, tenetur deleniti repellat sed nemo eius distinctio, ex doloribus ea sit optio et ullam omnis neque quaerat doloremque fuga!
+
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam architecto nesciunt voluptatem expedita eum reiciendis consequatur ipsa, minima numquam voluptate excepturi aliquam atque alias, recusandae possimus illo totam accusamus similique!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel suscipit, obcaecati odio dolor beatae voluptates earum non perferendis magnam nam eligendi iste dolores facere illo soluta sunt facilis ullam.
+
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, perferendis eaque. Aliquam eius magni id, explicabo voluptatem quasi ducimus neque dolor at quam ab, pariatur sapiente, reiciendis obcaecati asperiores delectus.
+
+
+				aside
+					.widget.search
+						h3 Search News
+						form(action='#', method='get', autocomplete='off')
+							input(type='text', name='s', placeholder='Search articles')
+							button.icon-search(type='submit') 
+
+					.widget
+						h3 Recent Articles
+						ul
+							li
+								a(href='#') consectetur adipisicing elit
+							li
+								a(href='#') Lorem ipsum dolor sit amet
+							li
+								a(href='#') consectetur adipisicing elit
+							li
+								a(href='#') Lorem ipsum dolor sit amet
+
+
+					.widget
+						h3 Categories
+						ul
+							li
+								a(href='#') Consectetur
+							li
+								a(href='#') Lorem ipsum
+							li
+								a(href='#') Adipisicing elit
+							li
+								a(href='#') Dolor sit amet
+					.widget
+						h3 Archives
+						ul
+							li
+								a(href='#') Consectetur
+							li
+								a(href='#') Lorem ipsum
+							li
+								a(href='#') Adipisicing elit
+							li
+								a(href='#') Dolor sit amet
+
+		include ../footer.jade
+		script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+	

@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+	head
+	title Blog Collection
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+	//meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+	meta(name="apple-mobile-web-app-capable", content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+	meta(name="theme-color", content="#0073AC")
+	meta(name="msapplication-navbutton-color", content="#0073AC")
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+	body
+		include ../header.jade
+		main.blog
+			.gwr
+				h1.gTitle Blog
+			#blog-collection.gwr
+				.rigted
+					ul#articles-blog
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+
+						li
+							time(datetime='2008-02-14 20:00')
+								span 14
+								| Jul
+							img(src="../images/blogImg.jpg", title="#", alt="#").blazy
+							h3 The value of your real estate purchase or sale should begin with MBF Logo
+							a(href='#', title='Read More').readmore.icon-arrowb Read more
+
+
+					#wrap-result.paginator
+						nav#nav-results
+							span#indicator Pag 1 of 467
+							a#firstp.ad.visible(href='#', title='First Page', rel='nofollow')
+								span.icon-arrow-select
+								span.icon-arrow-select
+								span First page
+							a#prevn.arrow.icon-arrow-select.prevn.visible(href='#', title='Prev Page', rel='nofollow')
+								span Previus page
+							ul#principal-nav
+								li
+									a(href='#', rel='nofollow') 1
+								li
+									a(href='#', rel='nofollow') 2
+								li.active
+									a(href='#', rel='nofollow') 3
+								li
+									a(href='#', rel='nofollow') 4
+								li
+									a(href='#', rel='nofollow') 5
+								li
+									a(href='#', rel='nofollow') 6
+								li
+									a(href='#', rel='nofollow') 7
+							span.points ...
+							ul#complementary-nav
+								li
+									a(href='#', rel='nofollow') 20
+								li
+									a(href='#', rel='nofollow') 30
+								li
+									a(href='#', rel='nofollow') 40
+							span.points ...
+							a#nextn.arrow.icon-arrow-select.nextn.visible(href='#', title='Next Page', rel='nofollow')
+								span Next page
+							a#lastp.ad.visible(href='#', title='Last Page', rel='nofollow')
+								span.icon-arrow-select
+								span.icon-arrow-select
+								span Last page
+
+
+				aside
+					.widget.search
+						h3 Search News
+						form(action='#', method='get', autocomplete='off')
+							input(type='text', name='s', placeholder='Search articles')
+							button.icon-search(type='submit') 
+
+					.widget
+						h3 Recent Articles
+						ul
+							li
+								a(href='#') consectetur adipisicing elit
+							li
+								a(href='#') Lorem ipsum dolor sit amet
+							li
+								a(href='#') consectetur adipisicing elit
+							li
+								a(href='#') Lorem ipsum dolor sit amet
+
+
+					.widget
+						h3 Categories
+						ul
+							li
+								a(href='#') Consectetur
+							li
+								a(href='#') Lorem ipsum
+							li
+								a(href='#') Adipisicing elit
+							li
+								a(href='#') Dolor sit amet
+					.widget
+						h3 Archives
+						ul
+							li
+								a(href='#') Consectetur
+							li
+								a(href='#') Lorem ipsum
+							li
+								a(href='#') Adipisicing elit
+							li
+								a(href='#') Dolor sit amet
+
+		include ../footer.jade
+		script(type="text/javascript", src="../js/jquery-3.1.1.min.js")

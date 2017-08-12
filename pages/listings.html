@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Profile | Master Elite 2017</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0073AC">
+    <meta name="theme-color" content="#0073AC">
+    <meta name="msapplication-navbutton-color" content="#0073AC">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap-options">
+        <div class="gwr">
+          <ul id="user-options">
+            <li class="login icon-user"><a class="show-modal" href="#" title="Sign in" data-modal="modal_login" rel="nofollow">Sign in</a></li>
+            <li class="register"><a class="show-modal" href="#" title="Register" data-modal="modal_login" rel="nofollow">Register</a></li>
+          </ul>
+          <ul class="social-networks">
+            <li class="icon-facebook"><a href="#" title="Facebook" target="_blank" rel="nofollow">Facebook</a></li>
+            <li class="icon-twitter"><a href="#" title="Twitter" target="_blank" rel="nofollow">Twitter</a></li>
+            <li class="icon-google-plus"><a href="#" title="Google+" target="_blank" rel="nofollow">Google+</a></li>
+            <li class="icon-instagram"><a href="#" title="Instagram" target="_blank" rel="nofollow">Instagram</a></li>
+            <li class="icon-linkedin"><a href="#" title="Linked In" target="_blank" rel="nofollow">Linked In</a></li>
+          </ul>
+          <ul id="available-languages">
+            <li class="english active"><span>EN</span>
+              <button data-iso="us" title="English">English</button>
+            </li>
+            <li class="russian"><span>RU</span>
+              <button data-iso="ru" title="Russian">Pусский</button>
+            </li>
+            <li class="spanish"><span>ES</span>
+              <button data-iso="es" title="#">Spanish</button>
+            </li>
+            <li class="portuguese"><span>BR</span>
+              <button data-iso="br" title="#">Português</button>
+            </li>
+            <li class="french"><span>FR</span>
+              <button data-iso="fr" title="#">Français</button>
+            </li>
+            <li class="italy"><span>IT</span>
+              <button data-iso="it" title="#">Italy</button>
+            </li>
+            <li class="german"><span>DE</span>
+              <button data-iso="de" title="#">Deutsch</button>
+            </li>
+            <li class="chinese"><span>ZH</span>
+              <button data-iso="zh" title="#">中文</button>
+            </li>
+          </ul><a href="tel:305.705.5000" title="Call Us" id="call-us">Call Us: 305.705.5000</a>
+        </div>
+      </div>
+      <div class="wrap-menu">
+        <div class="gwr"><a class="title" href="#" title="Master Elite"><img class="logo" src="../images/logo.png" title="logo" alt="Tremgroup"></a>
+          <nav>
+            <ul>
+              <li class="current-menu-item"><a href="#" title="Search">Search</a></li>
+              <li class="menu-item-has-children"><a href="http://www.google.com" title="Neighborhoods">Neighborhoods</a>
+                <ul>
+                  <li><a href="#" title="All Neighborhoods">All Neighborhoods</a></li>
+                  <li><a href="#" title="Allison Island">Allison Island</a></li>
+                  <li><a href="#" title="Aventura">Aventura</a></li>
+                  <li><a href="#" title="Bal Harbour">Bal Harbour</a></li>
+                  <li><a href="#" title="Bay Harbor Islands">Bay Harbor Islands</a></li>
+                  <li><a href="#" title="Bay Point">Bay Point</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children"><a href="http://www.google.com" title="Buildings">Buildings</a>
+                <ul>
+                  <li><a href="#" title="All Buildings">All Buildings</a></li>
+                  <li><a href="#" title="Aventura">Aventura</a></li>
+                  <li><a href="#" title="Bal Harbour">Bal Harbour</a></li>
+                  <li><a href="#" title="Brickell/ Brickell Key">Brickell/ Brickell Key</a></li>
+                  <li><a href="#" title="Coconut Grove">Coconut Grove</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="New Construction">New Construction</a></li>
+              <li><a href="#" title="My Listings">My Listings</a></li>
+              <li><a href="#" title="About">About</a></li>
+              <li><a href="#" title="News">News</a></li>
+              <li><a href="#" title="Testimonials">Testimonials</a></li>
+              <li><a href="#" title="Contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button id="hamburger"><span>Menu responsive</span></button>
+        </div>
+      </div>
+    </header>
+    <main class="home page-result">
+      <section class="saved-list view-list" id="wrap-result">
+        <h1 class="title">Search results</h1>
+        <div class="gwr">
+          <div class="wrapper-scroll-tab">
+            <ul class="scroll-tab-list default-tab">
+              <li class="scroll-item">
+                <button class="item-tab active" data-tab="#tab-saved-list">My Saved Listings</button>
+              </li>
+              <li class="scroll-item">
+                <button class="item-tab" data-tab="#tab-favorite-list">My Favorite Buildings</button>
+              </li>
+              <li class="scroll-item">
+                <button class="item-tab" data-tab="#tab-saved-search">My Saved Searches</button>
+              </li>
+              <li class="scroll-item">
+                <button class="item-tab" data-tab="#tab-profile">My Profile</button>
+              </li>
+              <li class="scroll-item"><a href="#" rel="nofollow">Contact Us</a></li>
+            </ul>
+            <div class="scroll-paddles">
+              <button class="paddle-left"></button>
+              <button class="paddle-right"></button>
+            </div>
+          </div>
+          <div class="default-body-tab" id="wrap-list-result">
+            <div class="default-item-tab active" id="tab-saved-list">
+              <div class="header-title-profile">
+                <h2 class="title-profile">My Saved Listings</h2>
+                <button class="select-chk" data-parent="tab-saved-list"><span>Select All</span></button>
+                <button class="btn mail-btn show-modal" data-modal="modal_email_to_friend"><span>Email Properties</span></button>
+              </div>
+              <ul class="head-list">
+                <li class="address">Address</li>
+                <li class="price">Asking Price</li>
+                <li class="beds">Beds</li>
+                <li class="baths">Baths</li>
+                <li class="price-sf">Price / SF </li>
+                <li class="code-list">Code</li>
+              </ul>
+              <ul class="result-search slider-generator">
+                <li class="propertie" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>1 Casuarina Concorse</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="price"> <span>Price</span>$19,000,000</li>
+                    <li class="beds">10  <span>Beds </span></li>
+                    <li class="baths">8 <span>Baths </span></li>
+                    <li class="living-size"> <span>2,534</span>SF <span>(452 m2)</span></li>
+                    <li class="code-list"><span>Code</span>A16150988</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>1 Casuarina Concorse</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="price"> <span>Price</span>$53,000,000</li>
+                    <li class="beds">10  <span>Beds </span></li>
+                    <li class="baths">8 <span>Baths </span></li>
+                    <li class="living-size"> <span>2,534</span>SF <span>(452 m2)</span></li>
+                    <li class="code-list"><span>Code</span>A16150988</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>1 Casuarina Concorse</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="price"> <span>Price</span>$7,000,000</li>
+                    <li class="beds">10  <span>Beds </span></li>
+                    <li class="baths">8 <span>Baths </span></li>
+                    <li class="living-size"> <span>2,534</span>SF <span>(452 m2)</span></li>
+                    <li class="code-list"><span>Code</span>A16150988</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>1 Casuarina Concorse</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="price"> <span>Price</span>$44,000,000</li>
+                    <li class="beds">10  <span>Beds </span></li>
+                    <li class="baths">8 <span>Baths </span></li>
+                    <li class="living-size"> <span>2,534</span>SF <span>(452 m2)</span></li>
+                    <li class="code-list"><span>Code</span>A16150988</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>1 Casuarina Concorse</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="price"> <span>Price</span>$45,000,000</li>
+                    <li class="beds">10  <span>Beds </span></li>
+                    <li class="baths">8 <span>Baths </span></li>
+                    <li class="living-size"> <span>2,534</span>SF <span>(452 m2)</span></li>
+                    <li class="code-list"><span>Code</span>A16150988</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+              </ul>
+              <div class="gwr full-m">
+                <nav class="nav-results"><span class="indicator">Pag 1 of 467</span><a class="ad visible" href="#" title="First Page" rel="nofollow" id="firstp"><span class="icon-arrow-select"></span><span class="icon-arrow-select"></span><span>First page</span></a><a class="arrow icon-arrow-select prevn visible" href="#" title="Prev Page" rel="nofollow" id="prevn"><span>Previus page</span></a>
+                  <ul class="principal-nav">
+                    <li><a href="#" rel="nofollow">1</a></li>
+                    <li><a href="#" rel="nofollow">2</a></li>
+                    <li class="active"><a href="#" rel="nofollow">3</a></li>
+                    <li><a href="#" rel="nofollow">4</a></li>
+                    <li><a href="#" rel="nofollow">5</a></li>
+                    <li><a href="#" rel="nofollow">6</a></li>
+                    <li><a href="#" rel="nofollow">7</a></li>
+                  </ul><span class="points">...</span>
+                  <ul class="complementary-nav">
+                    <li><a href="#" rel="nofollow">20</a></li>
+                    <li><a href="#" rel="nofollow">30</a></li>
+                    <li><a href="#" rel="nofollow">40</a></li>
+                  </ul><span class="points">...</span><a class="arrow icon-arrow-select nextn visible" href="#" title="Prev Page" rel="nofollow" id="nextn"><span>Next page</span></a><a class="ad visible" href="#" title="First Page" rel="nofollow" id="lastp"><span class="icon-arrow-select"></span><span class="icon-arrow-select"></span><span>Last page</span></a>
+                </nav>
+              </div>
+            </div>
+            <div class="default-item-tab" id="tab-favorite-list"> 
+              <div class="header-title-profile">
+                <h2 class="title-profile">My Favorite Buildings</h2>
+                <button class="select-chk" data-parent="tab-favorite-list"><span>Select All</span></button>
+                <button class="btn mail-btn show-modal" data-modal="modal_email_to_friend"><span>Email Properties</span></button>
+              </div>
+              <ul class="head-list">
+                <li class="address">Address</li>
+                <li class="sale">For Sale</li>
+                <li class="rent">For Rent</li>
+                <li class="sold">Sold</li>
+                <li class="reference">Reference</li>
+              </ul>
+              <ul class="result-search slider-generator">
+                <li class="propertie building-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Continuum in South Beach</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="beds">4  <span>For Sale </span></li>
+                    <li class="beds">35 <span>For Rent </span></li>
+                    <li class="beds">107 <span>Sold</span></li>
+                    <li class="code-list"><span>Code</span>South of Fifth</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie building-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Continuum in South Beach</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="beds">4  <span>For Sale </span></li>
+                    <li class="beds">35 <span>For Rent </span></li>
+                    <li class="beds">107 <span>Sold</span></li>
+                    <li class="code-list"><span>Code</span>South of Fifth</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie building-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Continuum in South Beach</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="beds">4  <span>For Sale </span></li>
+                    <li class="beds">35 <span>For Rent </span></li>
+                    <li class="beds">107 <span>Sold</span></li>
+                    <li class="code-list"><span>Code</span>South of Fifth</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie building-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Continuum in South Beach</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="beds">4  <span>For Sale </span></li>
+                    <li class="beds">35 <span>For Rent </span></li>
+                    <li class="beds">107 <span>Sold</span></li>
+                    <li class="code-list"><span>Code</span>South of Fifth</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie building-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Continuum in South Beach</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami, FL 33145</li>
+                    <li class="beds">4  <span>For Sale </span></li>
+                    <li class="beds">35 <span>For Rent </span></li>
+                    <li class="beds">107 <span>Sold</span></li>
+                    <li class="code-list"><span>Code</span>South of Fifth</li>
+                    <li class="request">
+                      <button class="show-modal" data-modal="modal_schedule"> <span>request showing</span></button>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li><img src="#" data-src="http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg" title="#" alt="#"></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div>
+                  <button class="select-chk"><span></span></button><a class="view-detail" href="#">View detail</a>
+                </li>
+              </ul>
+            </div>
+            <div class="default-item-tab" id="tab-saved-search">
+              <div class="header-title-profile">
+                <h2 class="title-profile">My Saved Searches</h2>
+              </div>
+              <ul class="head-list">
+                <li class="address">Address</li>
+                <li class="price">Price Range</li>
+                <li class="beds">Bedrooms</li>
+                <li class="baths">Bathrooms</li>
+                <li class="living-size">Living Size</li>
+              </ul>
+              <ul class="result-search slider-generator">
+                <li class="propertie saved-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Josh The Mexican</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami Beach, Bal Harbour</li>
+                    <li class="price">$10,000,000 - $65,000,000   <span>Price Range</span></li>
+                    <li class="beds">4 - 5 <span>Bedrooms</span></li>
+                    <li class="beds">3.5 - 5.5 <span>Bathrooms</span></li>
+                    <li class="living-size">10,547 - 12,500<span>Living size</span></li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Pool</span>Yes</li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Parking</span>4+</li>
+                    <li class="notify"><span>Notifications</span>
+                      <label class="opt_content" for="opt_1">
+                        <input type="radio" value="1" id="opt_1" name="on"><span>On</span>
+                      </label>
+                      <label class="opt_content" for="opt_2">
+                        <input type="radio" value="2" id="opt_2" name="off"><span>Off</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li>21<span>Listings</span></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie saved-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Josh The Mexican</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami Beach, Bal Harbour</li>
+                    <li class="price">$10,000,000 - $65,000,000   <span>Price Range</span></li>
+                    <li class="beds">4 - 5 <span>Bedrooms</span></li>
+                    <li class="beds">3.5 - 5.5 <span>Bathrooms</span></li>
+                    <li class="living-size">10,547 - 12,500<span>Living size</span></li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Pool</span>Yes</li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Parking</span>4+</li>
+                    <li class="notify"><span>Notifications</span>
+                      <label class="opt_content" for="opt_1">
+                        <input type="radio" value="1" id="opt_1" name="on"><span>On</span>
+                      </label>
+                      <label class="opt_content" for="opt_2">
+                        <input type="radio" value="2" id="opt_2" name="off"><span>Off</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li>21<span>Listings</span></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie saved-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Josh The Mexican</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami Beach, Bal Harbour</li>
+                    <li class="price">$10,000,000 - $65,000,000   <span>Price Range</span></li>
+                    <li class="beds">4 - 5 <span>Bedrooms</span></li>
+                    <li class="beds">3.5 - 5.5 <span>Bathrooms</span></li>
+                    <li class="living-size">10,547 - 12,500<span>Living size</span></li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Pool</span>Yes</li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Parking</span>4+</li>
+                    <li class="notify"><span>Notifications</span>
+                      <label class="opt_content" for="opt_1">
+                        <input type="radio" value="1" id="opt_1" name="on"><span>On</span>
+                      </label>
+                      <label class="opt_content" for="opt_2">
+                        <input type="radio" value="2" id="opt_2" name="off"><span>Off</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li>21<span>Listings</span></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie saved-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Josh The Mexican</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami Beach, Bal Harbour</li>
+                    <li class="price">$10,000,000 - $65,000,000   <span>Price Range</span></li>
+                    <li class="beds">4 - 5 <span>Bedrooms</span></li>
+                    <li class="beds">3.5 - 5.5 <span>Bathrooms</span></li>
+                    <li class="living-size">10,547 - 12,500<span>Living size</span></li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Pool</span>Yes</li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Parking</span>4+</li>
+                    <li class="notify"><span>Notifications</span>
+                      <label class="opt_content" for="opt_1">
+                        <input type="radio" value="1" id="opt_1" name="on"><span>On</span>
+                      </label>
+                      <label class="opt_content" for="opt_2">
+                        <input type="radio" value="2" id="opt_2" name="off"><span>Off</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li>21<span>Listings</span></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div><a class="view-detail" href="#">View detail</a>
+                </li>
+                <li class="propertie saved-list" data-id="343278191" data-mls="A10172834" data-counter="10">
+                  <h2 title="Nombre completo de la dirección"><span>Josh The Mexican</span></h2>
+                  <ul class="features">
+                    <li class="address">Miami Beach, Bal Harbour</li>
+                    <li class="price">$10,000,000 - $65,000,000   <span>Price Range</span></li>
+                    <li class="beds">4 - 5 <span>Bedrooms</span></li>
+                    <li class="beds">3.5 - 5.5 <span>Bathrooms</span></li>
+                    <li class="living-size">10,547 - 12,500<span>Living size</span></li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Pool</span>Yes</li>
+                    <li class="hidden"><span>Min Year</span>2005</li>
+                    <li class="hidden"><span>Parking</span>4+</li>
+                    <li class="notify"><span>Notifications</span>
+                      <label class="opt_content" for="opt_1">
+                        <input type="radio" value="1" id="opt_1" name="on"><span>On</span>
+                      </label>
+                      <label class="opt_content" for="opt_2">
+                        <input type="radio" value="2" id="opt_2" name="off"><span>Off</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="wrap-slider">
+                    <ul>
+                      <li>21<span>Listings</span></li>
+                    </ul>
+                  </div>
+                  <div class="list-options">
+                    <button class="btn-show"> <span class="s1">View more</span><span class="s2">Less</span></button>
+                    <button class="btn-remove"> <span>Remove</span></button>
+                  </div><a class="view-detail" href="#">View detail</a>
+                </li>
+              </ul>
+            </div>
+            <div class="default-item-tab" id="tab-profile">
+              <div class="header-title-profile">
+                <h2 class="title-profile">My Profile</h2>
+              </div>
+              <div class="form-profile">
+                <form method="POST" action="">
+                  <ul class="body-form">
+                    <li class="content-form">
+                      <label>Name*</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>Last Name*</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>Email*</label>
+                      <input class="input-form" type="email">
+                    </li>
+                    <li class="content-form">
+                      <label>Phone*</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>Address</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>City</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>State</label>
+                      <input class="input-form" type="text">
+                    </li>
+                    <li class="content-form">
+                      <label>Zip Code</label>
+                      <input class="input-form" type="text">
+                    </li>
+                  </ul>
+                  <div class="header-title-profile">
+                    <h2 class="title-profile">Change Password</h2>
+                  </div>
+                  <ul class="body-form">
+                    <li class="content-form">
+                      <label>New Password*</label>
+                      <input class="input-form" type="password">
+                    </li>
+                    <li class="content-form">
+                      <label>Confirm Password*</label>
+                      <input class="input-form" type="password">
+                    </li>
+                  </ul>
+                  <p>*Required fields. Your personal information is strictly confidential and will not be shared with any outside organizations. </p>
+                  <p>By submitting this form with your telephone number you are consenting for Peter Park and authorized representatives to contact you even if your name is on the Federal "Do-not-call List."</p>
+                  <button type="submit">Save Profile</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="gwr">
+        <p>Master Elite All rights reserved 2017 ©</p><span class="info-trem">Design  +  Powered by <a href="http://www.tremgroup.com/" target="_blank" title="Trem Group">trem<span>group</span></a></span>
+      </div>
+    </footer>
+    <aside id="content-modals">
+      <div class="overlay_modal" id="modal_email_to_friend">
+        <div class="modal_cm">
+          <button class="close close-modal" data-frame="modal_mobile" data-id="modal_email_to_friend">Close</button>
+          <div class="content_md">
+            <div class="heder_md">
+              <h2>Email to a friend</h2>
+            </div>
+            <div class="body_md">
+              <p>Recomend this to a friend, just enter their email below</p>
+              <div class="form_content">
+                <form action="" method="POST" id="form-email-friend">
+                  <div class="gform_body">
+                    <ul class="gform_fields">
+                      <li class="gfield field_sublabel_below">Friends Information</li>
+                      <li class="gfield">
+                        <label class="gfield_label">Friend email</label>
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_1" id="" type="email" value="" placeholder="Friend email*">
+                        </div>
+                      </li>
+                      <li class="gfield">
+                        <label class="gfield_label">Friend name</label>
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_2" id="" type="text" value="" placeholder="Friend name*">
+                        </div>
+                      </li>
+                      <li class="gfield field_sublabel_below">Your Information</li>
+                      <li class="gfield">
+                        <label class="gfield_label">Your name</label>
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_3" id="" type="text" value="" placeholder="Your name*">
+                        </div>
+                      </li>
+                      <li class="gfield">
+                        <label class="gfield_label">Your email</label>
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_4" id="" type="email" value="" placeholder="Your email*">
+                        </div>
+                      </li>
+                      <li class="gfield comments">
+                        <label class="gfield_label">Comments</label>
+                        <div class="ginput_container">
+                          <textarea class="medium textarea" name="input_5" id="" type="text" value="" placeholder="Comments" rows="10" cols="50"></textarea>
+                        </div>
+                      </li>
+                      <li class="gfield requiredFields">* Required Fields</li>
+                    </ul>
+                    <div class="gform_footer">
+                      <input class="gform_button button" type="submit" id="gform_submit_button_6" value="Submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay_modal_closer" data-frame="modal_mobile" data-id="modal_email_to_friend"></div>
+      </div>
+      <div class="overlay_modal" id="modal_schedule">
+        <div class="modal_cm">
+          <button class="close close-modal" data-frame="modal_mobile" data-id="modal_schedule">Close</button>
+          <div class="content_md">
+            <div class="heder_md">
+              <h2>Schedule a showing</h2>
+            </div>
+            <div class="body_md">
+              <div class="msg">441 Dilido Island, Miami Beach Fl 33145</div>
+              <div class="form_content">
+                <form action="" method="POST" id="form-scheduled">
+                  <div class="gform_body">
+                    <ul class="gform_fields">
+                      <li class="gfield">
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_1" id="" type="text" value="" placeholder="Name">
+                        </div>
+                      </li>
+                      <li class="gfield">
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_2" id="" type="email" value="" placeholder="Email">
+                        </div>
+                      </li>
+                      <li class="gfield">
+                        <div class="ginput_container ginput_container_email">
+                          <input class="medium" name="input_3" id="" type="text" value="" placeholder="Phone number">
+                        </div>
+                      </li>
+                      <li class="gfield comments">
+                        <div class="ginput_container">
+                          <textarea class="medium textarea" name="input_5" id="" type="text" value="" placeholder="Comments" rows="10" cols="50">Comments</textarea>
+                        </div>
+                      </li>
+                      <li class="gfield field_sublabel_below">Prefered Time and Date</li>
+                      <li class="gfield time">
+                        <div class="ginput_container ginput_container_time">
+                          <select class="medium">
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="gfield date">
+                        <div class="ginput_container ginput_container_date"> 
+                          <select class="medium">
+                            <option>Select Date</option>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="gform_footer">
+                      <input class="gform_button button" type="submit" id="gform_submit_button_6" value="Submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay_modal_closer" data-frame="modal_mobile" data-id="modal_schedule"></div>
+      </div>
+      <div class="overlay_modal" id="modal_login">
+        <div class="login-modal">
+          <div class="img_modal"><img class="lazy-img" data-src="../images/loginavatar.jpg"></div>
+          <div id="content-info-modal">
+            <div class="modal_cm social_items">
+              <button class="close close-modal" data-frame="modal_mobile" data-id="modal_login">Close</button>
+              <div class="content_md">
+                <div class="heder_md">
+                  <h2>Welcome back</h2>
+                </div>
+                <div class="body_md">
+                  <p class="text-slogan">Sign in below</p>
+                  <ul class="contact-opt">
+                    <li><a href="tel:3057055000">(305) 705 - 5000</a></li>
+                    <li><a href="mailto:info@tremgroup.com">info@tremgroup.com</a></li>
+                  </ul>
+                  <ul class="header-tab">
+                    <li><a class="active" href="javascript:void(0)" title="Sign in" data-tab="tabLogin">Sign in</a></li>
+                    <li><a href="javascript:void(0)" title="Register" data-tab="tabRegister">Register</a></li>
+                    <li><a href="javascript:void(0)" title="Reset Password" data-tab="tabReset">Reset Password</a></li>
+                  </ul>
+                  <div class="item_tab active" id="tabLogin">
+                    <div class="form_content">
+                      <form id="formLogin" name="formLogin" method="POST" action="">
+                        <ul class="form_md" id="cntLoginForm">
+                          <li class="form_input">
+                            <input id="txt_user" type="email" name="user_name" placeholder="Enter email">
+                          </li>
+                          <li class="form_input">
+                            <input id="txt_pwd" type="password" name="user_pass" placeholder="Enter password">
+                          </li>
+                        </ul>
+                        <button class="btn_form" id="btn-user-login" type="submit">Sign in</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="item_tab" id="tabRegister">
+                    <div class="form_content">
+                      <form id="formRegister" name="formRegister" method="POST" action="">
+                        <ul class="form_md" id="cntRegisterForm">
+                          <li class="form_input">
+                            <input id="register_email" type="email" name="register_email" placeholder="Enter email">
+                          </li>
+                          <li class="form_input">
+                            <input id="register_name" type="text" name="register_name" placeholder="Name">
+                          </li>
+                          <li class="form_input">
+                            <input id="register_phone" type="text" name="register_phone" placeholder="Phone number">
+                          </li>
+                          <li class="form_input">
+                            <input id="register_password" type="password" name="register_password" placeholder="Create password"><span class="desc">The password must be greater than 8 characters</span>
+                          </li>
+                        </ul>
+                        <button class="btn_form" id="btn-user-register" type="submit">Register</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="item_tab" id="tabReset">
+                    <div class="form_content">
+                      <form id="formReset" name="formReset" method="POST" action="">
+                        <p>Enter you email address and we&apos;ll send you a link to your password                                </p>
+                        <ul class="form_md" id="cntResetForm">
+                          <li class="form_input">
+                            <input id="reset_email" type="email" name="reset_email" placeholder="Enter E-mail">
+                          </li>
+                        </ul>
+                        <button class="btn_form" id="btn-user-reset" type="submit">Send</button>
+                      </form>
+                    </div>
+                  </div>
+                  <ul class="terms-opt">
+                    <li><span>I accept </span><a href="#" title="Terms of use">Terms of use</a></li>
+                  </ul>
+                </div>
+                <div class="footer_md">
+                  <ul class="social_login">
+                    <li>Or sign in with</li>
+                    <li><a class="ico-facebook" href="#" title="Facebook">Facebook</a></li>
+                    <li><a class="ico-google" href="#" title="Google+">Google+</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay_modal_closer" data-frame="modal_mobile" data-id="modal_login"> </div>
+      </div>
+    </aside>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&amp;#038"></script>
+    <script type="text/javascript" src="../js/dgt-master.min.js"></script>
+  </body>
+</html>

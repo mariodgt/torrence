@@ -1,0 +1,264 @@
+doctype html
+html(lang='en')
+  head
+    title Agent | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body
+    include ../header.jade
+    main#wrap-neighborhood.basic-theme.agent-detail
+      section.nav-aside#agent-collection
+        h1.title-list-aside  Malek Abdulsamad 
+          span Realtor Associate
+        .content-nav
+          ul#list-agents
+            li
+              header
+                h3 Malek Abdulsamad
+                span Realtor Associate
+              .avatar
+                img(src="../images/profile.jpg", title="Agent Jorge Blanchard", alt="Jorge Blanchard")
+              ul.contact-info
+                li: a(href="mailto:jorge@uniquehomesofmiami.com", title="Email") jorge@uniquehomesofmiami.com
+                li: a(href="tel:3052163687", title="Phone number") O: 305.216.3687
+                li: a(href="tel:3052163687", title="Phone number") C: 305.216.3687
+
+              a(href="#", title="List with Malek Abdusamad").btn.btn-green List with Malek Abdusamad
+          .form-content
+            h3 Email Agent
+            form(action="", method="POST", id="form-request")
+              .gform_body
+                ul.gform_fields
+                  li.gfield
+                    label.gfield_label Name
+                    .ginput_container.ginput_container_text
+                      input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                  li.gfield
+                    label.gfield_label Email
+                    .ginput_container.ginput_container_email
+                      input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                  li.gfield
+                    label.gfield_label Phone
+                    .ginput_container.ginput_container_email
+                      input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                  li.gfield.comments
+                    label.gfield_label Comments
+                    .ginput_container
+                      textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                  li.gfield.requiredFields * Required Fields
+                  .gform_footer
+                    input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+      section#neighborhood
+        header
+          .gwr
+            .title-header
+            a(href="#", title="Find Your dream home now", rel="nofollow").btnb-blue Request more information
+            #wrap-breacrumb
+              .gwr
+                ol#breacrumb
+                  li: a(href='#') Home
+                  li Miami Beach Real Estate
+                  li 33141
+                  li South of Fifth
+                  li Continuum in South Beach
+                  li Address
+
+        section.gwr.block-description
+          h2 Professional Real Estate Agent
+          p Leticia Andrade became licensed as an Illinois Real Estate Broker in 2005 and has bilingual communication skills in English and Spanish. Born and raised in Chicago, Leticia has an in-depth knowledge of the many diverse neighborhoods in the Chicago market. Leticia’s strong work ethic has led her to have successful careers with State Farm Insurance, Countrywide Home Loans, and JP Morgan Chase Bank. She continues to build on her success as a highly respected professional in the Chicago real estate market. She is actively involved with the Women’s Council of Realtors, Young Professionals Network, National Association of Hispanic Real Estate Professionals, and Realtors to the Rescue and has achieved certification as an Accredited Buyers Representative, Short Sales and Foreclosure Resource.
+
+          p Upon embarking on her professional career in the banking and lending industries, she quickly discovered her affinity for real estate through the purchase of her first home at the age of 23. Leticia possesses passion, determination, boundless energy, and the lending background to guide her clients through a complex process. Leticia understands that the real estate market can be intimidating for some, but her experience helps bring confidence to the table that, in conjunction with her warm demeanor, puts clients at ease throughout the process. The purchase of one’s home is often one of life’s most important decisions and Leticia’s clients appreciate her compassionate and ethical approach. Leticia’s financial background and her dedication to keeping clients informed throughout the process sets her apart in a competitive industry.
+
+          p As the mother of two amazing daughters, Leticia is devoted to their education and athletic activities. Leticia attended Barat College in Lake Forest, IL where she was a theater major and has since developed a passion for mentoring young women who aspire to build their careers. Leticia maintains her energy and enthusiasm through her dedication to fitness, including participation in the Warriors Running Group and with Push Fitness.
+
+          p: a(href="#", title="Back to All Related") Back to All Related Realty's Chicago Real Estate Agents
+
+          //img(src="../images/hompage2.jpg", alt="Welcome to Miami Beach", title="Miami Beach")
+
+          .video-responsive.video-responsive-small
+            iframe.video-responsive-item(src="https://www.youtube.com/embed/scjjDbUmsCs?rel=0", allowfullscreen="")
+      
+        section#wrap-result.view-grid.gwr
+          h2.block-title Miami Beach Properties
+          #wrap-list-result
+            ul#result-search.slider-generator
+                - for(b = 0; b < 12; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span 151012 Collins Avenue Suit
+                      ul.features
+                        li.house-type: h3 Vacant Land For Sale
+                        li.address Miami, FL 33145
+                        li.price $#{price},000,000
+                        li.pr.down 2.05%
+                        li.beds 10  
+                          span Beds 
+                        li.baths 8 
+                          span Baths 
+                        li.living-size 
+                          span 2,534
+                          | SF 
+                          span (452 m2)
+                        li.price-sf
+                          span $345 
+                          | / SF
+                          span ($244 m2)
+                        li.type: span Davis citrus Farms
+                        li.build-year
+                          span Built 
+                          | 2015
+                        li.development: span Star Island Miami
+                      .wrap-slider
+                        ul
+                          li
+                            img(src="#" data-src='../images/propiertie.jpg', title='#', alt='#')
+                        button.prev: span.icon-arrow-select
+                        button.next: span.icon-arrow-select
+                      button.btn-check: span.icon-check
+                      a(href="#").view-detail Miami, FL 33145
+
+        section.gwr.m-bottom.communities-list
+          h2 Miami Beach Communities
+          ul
+            li
+              span South of Fifth
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span South Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span MId Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Venetian Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Sunset Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Fisher Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Hibiscus Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Star Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span La Gorce
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Allison Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span North Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+        
+        section.gwr.m-bottom.communities-list.column-list.builiding-m
+          h2 Miami Beach Profiled Buildings
+          ul
+            li Continuun in South Beach
+            li Apogee
+            li Murano Grande
+            li Portofino Tower
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+
+        section.gwr.m-bottom.communities-list.column-list
+          h2 Miami Beach Zip Codes
+          ul
+            li 33109
+            li 33139
+            li 33141
+
+        section.gwr.block-simple-description
+          h2 Your Miami Beach real estate experts
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+    include ../footer.jade
+
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="../js/dgt-master.min.js")

@@ -1,0 +1,503 @@
+doctype html
+html(lang='en')
+  head
+    title Home Building | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body
+    include ../header.jade
+    main#wrap-neighborhood.basic-theme
+      section#neighborhood
+        header
+          .gwr
+            .title-header
+            a(href="#", title="Find Your dream home now", rel="nofollow").btnb-blue Request more information
+            #wrap-breacrumb
+              .gwr
+                ol#breacrumb
+                  li: a(href='#') Home
+                  li Miami Beach Real Estate
+                  li 33141
+                  li South of Fifth
+                  li Continuum in South Beach
+                  li Address
+
+        .gwr.hidden-menu
+          #neighborhood-menu-m 
+            .wrapper-scroll-tab
+              ul.scroll-tab-list
+                li: a(href="#", title="Miami Beach Real Estate").scroll-item Miami Beach Real Estate
+                li: a(href="#", title="Homes For Sale ").scroll-item Homes For Sale
+                li: a(href="#", title="Condos For Sale").scroll-item Condos For Sale
+                li: a(href="#", title="Luxury Condos").scroll-item Luxury Condos
+                li: a(href="#", title="Rentals").scroll-item Rentals
+                li: a(href="#", title="Communities").scroll-item Communities
+                li: a(href="#", title="Latest News").scroll-item Latest News
+              .scroll-paddles
+                button.paddle-left
+                button.paddle-right
+
+        section.gwr.block-description
+          h1 Welcome to Miami Beach
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit.
+          img(src="../images/hompage2.jpg", alt="Welcome to Miami Beach", title="Miami Beach")
+      
+        section#wrap-result.view-grid.gwr
+          h2.block-title Miami Beach Properties
+          #wrap-list-result
+            ul#result-search.slider-generator
+                - for(b = 0; b < 18; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span 151012 Collins Avenue Suit
+                      ul.features
+                        li.house-type: h3 Vacant Land For Sale
+                        li.address Miami, FL 33145
+                        li.price $#{price},000,000
+                        li.pr.down 2.05%
+                        li.beds 10  
+                          span Beds 
+                        li.baths 8 
+                          span Baths 
+                        li.living-size 
+                          span 2,534
+                          | SF 
+                          span (452 m2)
+                        li.price-sf
+                          span $345 
+                          | / SF
+                          span ($244 m2)
+                        li.type: span Davis citrus Farms
+                        li.build-year
+                          span Built 
+                          | 2015
+                        li.development: span Star Island Miami
+                      .wrap-slider
+                        ul
+                          li
+                            img(src="#" data-src='../images/propiertie.jpg', title='#', alt='#')
+                        button.prev: span.icon-arrow-select
+                        button.next: span.icon-arrow-select
+                      button.btn-check: span.icon-check
+                      a(href="#").view-detail Miami, FL 33145
+          
+          a(href="#", title="View more listings", rel="nofollow").btn-link-blue View more listings  
+
+        section.gwr.m-bottom
+          h2.block-title Miami Beach Neighborhood Guide
+          ul.tab-list.default-tab
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-schools").item-tab.active Schools
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-restaurants").item-tab Restaurants
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-shopping").item-tab Shopping
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-activities").item-tab Activities
+          ul.body-tabs.default-body-tab
+            li#tab-schools.default-item-tab.item-tab.default-item-tab.active
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-restaurants.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 15 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-shopping.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 20 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-activities.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 10 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+
+        section.gwr.m-bottom
+          h2.block-title Miami Beach Real Estate Statistics
+          ul.es-content
+            li
+              h2 Available Sales
+              ul.list-es
+                li.es-total 945
+                li.price-title Avg Listing Price
+                li.price $6,6500,000
+                li.range-title Sales Price Range
+                li.range $1,345,000 - $19,900,000
+            li
+              h2 Available Rentals
+              ul.list-es
+                li.es-total 145
+                li.price-title Avg Rental Price
+                li.price $36,6500/mo
+                li.range-title Rental Price Range
+                li.range $1,345,000 - $19,900,000
+            li
+              h2 Sales History
+              ul.list-es
+                li.es-total 1,254
+                li.price-title Avg Sold Price
+                li.price $2,6500,000
+                li.range-title Sold Price Range
+                li.range $1,345,000 - $19,900,000
+
+        section.gwr.m-bottom
+          h2.block-title Latest News About Miami Beach Real Estate
+          ul.news-list
+            li
+              h2 Miami Beach Top Restaurant Venues
+              img(src="../images/propiertie1.jpg", alt="Miami Beach Top Restaurant Venues", title="Top Restaurant Venues")
+              a(href="#", title="Miami Beach Top Restaurant Venues") Top Restaurant Venues
+            li
+              h2 Miami Beach neighborhoods when moving from ouf of state
+              img(src="../images/propiertie2.jpg", alt="Miami Beach neighborhoods when moving from ouf of state", title="neighborhoods when moving from ouf of state")
+              a(href="#", title="Miami Beach neighborhoods when moving from ouf of state") Neighborhoods when moving from ouf of state
+            li
+              h2 Best Miami Beach Luxury condos under 3 million
+              img(src="../images/propiertie3.jpg", alt="Best Miami Beach Luxury condos under 3 million", title="Luxury condos under 3 million")
+              a(href="#", title="Best Miami Beach Luxury condos under 3 million") Luxury condos under 3 million
+        
+        section.gwr.mm-bottom
+          .form-content.large-form
+            .avatar-content
+              .content-avatar-image
+                img(src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img.active
+              .avatar-information
+                a(href="#",title="More Information").view-more More Information
+                h2 John Smith
+                a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+            form(action="", method="POST", id="form-request")
+              h2 Contact us for more details about 3254 Collins Ave, Suite 435
+              .gform_body
+                ul.gform_fields
+                  li.gfield
+                    label.gfield_label Name
+                    .ginput_container.ginput_container_text
+                      input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                  li.gfield
+                    label.gfield_label Email
+                    .ginput_container.ginput_container_email
+                      input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                  li.gfield
+                    label.gfield_label Phone
+                    .ginput_container.ginput_container_email
+                      input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                  li.gfield.comments
+                    label.gfield_label Comments
+                    .ginput_container
+                      textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                  li.gfield.requiredFields * Required Fields
+                  .gform_footer
+                    input(type="submit", id="gform_submit_button_5", value="Submit").gform_button.button 
+        
+        section.gwr.m-bottom.communities-list
+          h2 Miami Beach Communities
+          ul
+            li
+              span South of Fifth
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span South Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span MId Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Venetian Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Sunset Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Fisher Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Hibiscus Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Star Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span La Gorce
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Allison Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span North Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+        
+        section.gwr.m-bottom.communities-list.column-list.builiding-m
+          h2 Miami Beach Profiled Buildings
+          ul
+            li Continuun in South Beach
+            li Apogee
+            li Murano Grande
+            li Portofino Tower
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+
+        section.gwr.m-bottom.communities-list.column-list
+          h2 Miami Beach Zip Codes
+          ul
+            li 33109
+            li 33139
+            li 33141
+
+        section.gwr.block-simple-description
+          h2 Your Miami Beach real estate experts
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+      section.nav-aside
+        h2.title-list-aside  Miami Beach Real Estate
+        .content-nav
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+
+        .content-nav
+          h3.title-list-aside Miami Beach Communities
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+          button.btn.btn-see-more  View More
+
+        .content-nav
+          h3.title-list-aside Miami Beach Luxury Condos
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+          button.btn.btn-see-more  View More
+
+        .content-nav
+          h3.title-list-aside Miami Beach Zip Codes
+          ul.list-nav-aside
+            li: a(href="#", title="33139") 33139
+            li: a(href="#", title="33141") 33141
+        
+        .content-nav
+          h4.title-list-aside Miami Beach Map
+          #min-map
+        
+        .content-nav
+          .form-content
+            .avatar-content
+              .content-avatar-image
+                img(src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img.active
+              .avatar-information
+                h2 John Smith
+                a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+                a(href="#",title="More Information").view-more More Information
+            form(action="", method="POST", id="form-request")
+              .gform_body
+                ul.gform_fields
+                  li.gfield
+                    label.gfield_label Name
+                    .ginput_container.ginput_container_text
+                      input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                  li.gfield
+                    label.gfield_label Email
+                    .ginput_container.ginput_container_email
+                      input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                  li.gfield
+                    label.gfield_label Phone
+                    .ginput_container.ginput_container_email
+                      input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                  li.gfield.comments
+                    label.gfield_label Comments
+                    .ginput_container
+                      textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                  li.gfield.requiredFields * Required Fields
+                  .gform_footer
+                    input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+        
+        .content-nav
+          .similar-properties
+            h2.title-similar-list Similar Properties For Sale
+              - for(b = 0; b < 6; b++)
+                article
+                  h2 
+                    a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+                      span Miami Beach, FL 33139
+                  ul
+                    li.price $65,000,000
+                    li 
+                      span 4 
+                      |Beds
+                    li 
+                      span 3 
+                      |Baths
+                    li 
+                      span 10,547 
+                      |SqFt
+                  a(href="#", title="1 Casuarina Concorse").layout-img
+                    img(src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img.active
+                  a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+            a(href="#", title="view more properties", rel="nofollow").show-more view more properties
+    include ../footer.jade
+
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="../js/dgt-master.min.js")

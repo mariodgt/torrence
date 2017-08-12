@@ -1,0 +1,415 @@
+doctype html
+html(lang='en')
+  head
+    title My Profile | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body
+    include ../header.jade
+    main.home.page-result
+      section#wrap-result.saved-list.view-list
+        h1.title Search results
+        .gwr
+          .wrapper-scroll-tab
+            ul.scroll-tab-list.default-tab
+              li.scroll-item
+                button(data-tab="#tab-saved-list").item-tab.active My Saved Listings
+              li.scroll-item
+                button(data-tab="#tab-favorite-list").item-tab My Favorite Buildings
+              li.scroll-item
+                button(data-tab="#tab-saved-search").item-tab My Saved Searches
+              li.scroll-item
+                button(data-tab="#tab-profile").item-tab My Profile
+              li.scroll-item
+                a(href="#", rel="nofollow") Contact Us
+            .scroll-paddles
+              button.paddle-left
+              button.paddle-right
+
+          #wrap-list-result.default-body-tab
+            #tab-saved-list.default-item-tab.active
+              .header-title-profile
+                h2.title-profile My Saved Listings
+                button.select-chk(data-parent="tab-saved-list"): span Select All
+                button.btn.mail-btn.show-modal(data-modal="modal_email_to_friend")
+                  span Email Properties
+              ul.head-list
+                li.address Address
+                li.price Asking Price
+                li.beds Beds
+                li.baths Baths
+                li.price-sf Price / SF 
+                li.code-list Code
+              ul.result-search.slider-generator
+                - for(b = 0; b < 5; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span 1 Casuarina Concorse
+                      ul.features
+                        li.address Miami, FL 33145
+                        li.price 
+                          span Price
+                          |$#{price},000,000
+                        li.beds 10  
+                          span Beds 
+                        li.baths 8 
+                          span Baths 
+                        li.living-size 
+                          span 2,534
+                          | SF 
+                          span (452 m2)
+                        li.code-list
+                          span Code
+                          |A16150988
+                        li.request
+                          button(data-modal="modal_schedule").show-modal  
+                            span request showing
+                      .wrap-slider
+                        ul
+                          li
+                            img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+                      .list-options
+                        button.btn-show 
+                          span.s1 View more
+                          span.s2 Less
+                        button.btn-remove 
+                          span Remove
+                      button.select-chk: span
+                      a(href="#").view-detail View detail
+              .gwr.full-m
+                nav.nav-results
+                  span.indicator Pag 1 of 467
+                  a(href="#", title="First Page", rel="nofollow")#firstp.ad.visible
+                    span.icon-arrow-select
+                    span.icon-arrow-select
+                    span First page
+                  a(href="#", title="Prev Page", rel="nofollow")#prevn.arrow.icon-arrow-select.prevn.visible
+                    span Previus page
+                  ul.principal-nav
+                    li: a(href='#', rel="nofollow") 1
+                    li: a(href='#', rel="nofollow") 2
+                    li.active: a(href='#', rel="nofollow") 3
+                    li: a(href='#', rel="nofollow") 4
+                    li: a(href='#', rel="nofollow") 5
+                    li: a(href='#', rel="nofollow") 6
+                    li: a(href='#', rel="nofollow") 7
+                  span.points ...
+                  ul.complementary-nav
+                    li: a(href='#', rel="nofollow") 20
+                    li: a(href='#', rel="nofollow") 30
+                    li: a(href='#', rel="nofollow") 40
+                  span.points ...
+                  a(href="#", title="Prev Page", rel="nofollow")#nextn.arrow.icon-arrow-select.nextn.visible
+                    span Next page
+                  a(href="#", title="First Page", rel="nofollow")#lastp.ad.visible
+                    span.icon-arrow-select
+                    span.icon-arrow-select
+                    span Last page
+            #tab-favorite-list.default-item-tab  
+              .header-title-profile
+                h2.title-profile My Favorite Buildings
+                button.select-chk(data-parent="tab-favorite-list"): span Select All
+                button.btn.mail-btn.show-modal(data-modal="modal_email_to_friend")
+                  span Email Properties
+              ul.head-list
+                li.address Address
+                li.sale For Sale
+                li.rent For Rent
+                li.sold Sold
+                li.reference Reference
+              ul.result-search.slider-generator
+                - for(b = 0; b < 5; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie.building-list(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span Continuum in South Beach
+                      ul.features
+                        li.address Miami, FL 33145
+                        li.beds 4  
+                          span For Sale 
+                        li.beds 35 
+                          span For Rent 
+                        li.beds 107 
+                          span Sold
+                        li.code-list
+                          span Code
+                          |South of Fifth
+                        li.request
+                          button(data-modal="modal_schedule").show-modal 
+                            span request showing
+                      .wrap-slider
+                        ul
+                          li
+                            img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+                      .list-options
+                        button.btn-show 
+                          span.s1 View more
+                          span.s2 Less
+                        button.btn-remove 
+                          span Remove
+                      button.select-chk: span
+                      a(href="#").view-detail View detail
+            #tab-saved-search.default-item-tab
+              .header-title-profile
+                h2.title-profile My Saved Searches
+              ul.head-list
+                li.address Address
+                li.price Price Range
+                li.beds Bedrooms
+                li.baths Bathrooms
+                li.living-size Living Size
+              ul.result-search.slider-generator
+                - for(b = 0; b < 5; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie.saved-list(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span Josh The Mexican
+                      ul.features
+                        li.address Miami Beach, Bal Harbour
+                        li.price $10,000,000 - $65,000,000   
+                          span Price Range
+                        li.beds 4 - 5 
+                          span Bedrooms
+                        li.beds 3.5 - 5.5 
+                          span Bathrooms
+                        li.living-size 10,547 - 12,500
+                          span Living size
+                        li.hidden
+                          span Min Year
+                          |2005
+                        li.hidden
+                          span Pool
+                          |Yes
+                        li.hidden
+                          span Min Year
+                          |2005
+                        li.hidden
+                          span Parking
+                          |4+
+                        li.notify
+                          span Notifications
+                          label(for="opt_1").opt_content
+                            input(type="radio", value="1", id="opt_1", name="on")
+                            span On
+                          label(for="opt_2").opt_content
+                            input(type="radio", value="2", id="opt_2", name="off")
+                            span Off
+                      .wrap-slider
+                        ul
+                          li 21
+                            span Listings
+
+                      .list-options
+                        button.btn-show 
+                          span.s1 View more
+                          span.s2 Less
+                        button.btn-remove 
+                          span Remove
+                      a(href="#").view-detail View detail
+
+            #tab-profile.default-item-tab
+              .header-title-profile
+                h2.title-profile My Profile
+              .form-profile
+                form(method="POST", action="")
+                  ul.body-form
+                    li.content-form
+                      label Name*
+                      input(type="text").input-form
+                    li.content-form
+                      label Last Name*
+                      input(type="text").input-form
+                    li.content-form
+                      label Email*
+                      input(type="email").input-form
+                    li.content-form
+                      label Phone*
+                      input(type="text").input-form
+                    li.content-form
+                      label Address
+                      input(type="text").input-form
+                    li.content-form
+                      label City
+                      input(type="text").input-form
+                    li.content-form
+                      label State
+                      input(type="text").input-form
+                    li.content-form
+                      label Zip Code
+                      input(type="text").input-form
+                  
+                  .header-title-profile
+                    h2.title-profile Change Password
+                  ul.body-form
+                    li.content-form
+                      label New Password*
+                      input(type="password").input-form
+                    li.content-form
+                      label Confirm Password*
+                      input(type="password").input-form 
+
+                  p *Required fields. Your personal information is strictly confidential and will not be shared with any outside organizations. 
+                  p By submitting this form with your telephone number you are consenting for Peter Park and authorized representatives to contact you even if your name is on the Federal "Do-not-call List."
+                  button(type="submit") Save Profile
+    include ../footer.jade
+    aside#content-modals
+      #modal_email_to_friend.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_email_to_friend") Close
+          .content_md
+            .heder_md
+              h2 Email to a friend
+            .body_md
+              p Recomend this to a friend, just enter their email below
+              .form_content
+                form(action="", method="POST", id="form-email-friend")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield.field_sublabel_below Friends Information
+                      li.gfield
+                        label.gfield_label Friend email
+                        .ginput_container.ginput_container_email
+                          input(name="input_1", id="", type="email", value="", placeholder="Friend email*").medium
+                      li.gfield
+                        label.gfield_label Friend name
+                        .ginput_container.ginput_container_email
+                          input(name="input_2", id="", type="text", value="", placeholder="Friend name*").medium
+                      li.gfield.field_sublabel_below Your Information
+                      li.gfield
+                        label.gfield_label Your name
+                        .ginput_container.ginput_container_email
+                          input(name="input_3", id="", type="text", value="", placeholder="Your name*").medium
+                      li.gfield
+                        label.gfield_label Your email
+                        .ginput_container.ginput_container_email
+                          input(name="input_4", id="", type="email", value="", placeholder="Your email*").medium
+                      li.gfield.comments
+                        label.gfield_label Comments
+                        .ginput_container
+                          textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                      li.gfield.requiredFields * Required Fields
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_email_to_friend")
+      #modal_schedule.overlay_modal
+        .modal_cm
+          button.close.close-modal(data-frame="modal_mobile", data-id="modal_schedule") Close
+          .content_md
+            .heder_md
+              h2 Schedule a showing
+            .body_md
+              .msg 441 Dilido Island, Miami Beach Fl 33145
+              .form_content
+                
+                form(action="", method="POST", id="form-scheduled")
+                  .gform_body
+                    ul.gform_fields
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_1", id="", type="text", value="", placeholder="Name").medium
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_2", id="", type="email", value="", placeholder="Email").medium
+                      li.gfield
+                        .ginput_container.ginput_container_email
+                          input(name="input_3", id="", type="text", value="", placeholder="Phone number").medium
+                      li.gfield.comments
+                        .ginput_container
+                          textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea Comments
+                      li.gfield.field_sublabel_below Prefered Time and Date
+                      li.gfield.time
+                        .ginput_container.ginput_container_time
+                          select.medium
+                            option 10:00 AM
+                            option 11:00 AM
+                      li.gfield.date
+                        .ginput_container.ginput_container_date 
+                          select.medium
+                            option Select Date
+                    .gform_footer
+                      input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_schedule")
+      #modal_login.overlay_modal
+        .login-modal
+          .img_modal
+            img.lazy-img(data-src='../images/loginavatar.jpg')             
+          #content-info-modal
+            .modal_cm.social_items
+              button.close.close-modal(data-frame="modal_mobile", data-id="modal_login") Close
+              .content_md
+                .heder_md
+                  h2 Welcome back
+                .body_md
+                  p.text-slogan Sign in below
+                  ul.contact-opt
+                    li
+                      a(href='tel:3057055000') (305) 705 - 5000
+                    li
+                      a(href='mailto:info@tremgroup.com') info@tremgroup.com
+                  ul.header-tab
+                    li
+                      a.active(href='javascript:void(0)', title='Sign in', data-tab='tabLogin') Sign in
+                    li
+                      a(href='javascript:void(0)', title='Register', data-tab='tabRegister') Register
+                    li
+                      a(href='javascript:void(0)', title='Reset Password', data-tab='tabReset') Reset Password
+                  #tabLogin.item_tab.active
+                    .form_content
+                      form#formLogin(name='formLogin', method='POST', action='')
+                        ul#cntLoginForm.form_md
+                          li.form_input
+                            input#txt_user(type='email', name='user_name', placeholder='Enter email')
+                          li.form_input
+                            input#txt_pwd(type='password', name='user_pass', placeholder='Enter password')
+                        button#btn-user-login.btn_form(type='submit') Sign in
+                  #tabRegister.item_tab
+                    .form_content
+                      form#formRegister(name='formRegister', method='POST', action='')
+                        ul#cntRegisterForm.form_md
+                          li.form_input
+                            input#register_email(type='email', name='register_email', placeholder='Enter email')
+                          li.form_input
+                            input#register_name(type='text', name='register_name', placeholder='Name')
+                          li.form_input
+                            input#register_phone(type='text', name='register_phone', placeholder='Phone number')
+                          li.form_input
+                            input#register_password(type='password', name='register_password', placeholder='Create password')
+                            span.desc The password must be greater than 8 characters
+                        button#btn-user-register.btn_form(type='submit') Register
+                  #tabReset.item_tab
+                    .form_content
+                      form#formReset(name='formReset', method='POST', action='')
+                        p Enter you email address and we&apos;ll send you a link to your password                                
+                        ul#cntResetForm.form_md
+                          li.form_input
+                            input#reset_email(type='email', name='reset_email', placeholder='Enter E-mail')                                            
+                        button#btn-user-reset.btn_form(type='submit') Send
+                  ul.terms-opt
+                    li
+                      span I accept 
+                      a(href='#', title='Terms of use') Terms of use
+                .footer_md
+                  ul.social_login
+                    li Or sign in with
+                    li
+                      a.ico-facebook(href='#', title='Facebook') Facebook
+                    li
+                      a.ico-google(href='#', title='Google+') Google+
+        .overlay_modal_closer(data-frame="modal_mobile", data-id="modal_login") 
+
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&#038")
+    script(type="text/javascript", src="../js/dgt-master.min.js")
+    

@@ -1,0 +1,880 @@
+doctype html
+html(lang='en')
+  head
+    title Home Building | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body
+    include ../header.jade
+    main#wrap-neighborhood.basic-theme
+      section#neighborhood
+        header
+          .gwr
+            .title-header
+            a(href="#", title="Find Your dream home now", rel="nofollow").btnb-blue Request more information
+            #wrap-breacrumb
+              .gwr
+                ol#breacrumb
+                  li: a(href='#') Home
+                  li Miami Beach Real Estate
+                  li 33141
+                  li South of Fifth
+                  li Continuum in South Beach
+                  li Address
+
+        
+        section.gwr.block-description
+          h1 Welcome to Miami Beach
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit.
+          img(src="../images/hompage2.jpg", alt="Welcome to Miami Beach", title="Miami Beach")
+
+
+        #neighborhood-menu-m
+          .gwr
+            .wrapper-scroll-tab
+              ul.scroll-tab-list
+                li: a(href="#", title="Miami Beach Real Estate").scroll-item Miami Beach Real Estate
+                li: a(href="#", title="Homes For Sale ").scroll-item Homes
+                li: a(href="#", title="Condos For Sale").scroll-item Condos
+                li: a(href="#", title="Buildings").scroll-item Buildings
+                li: a(href="#", title="Rentals").scroll-item Rentals
+                li: a(href="#", title="Market Reports").scroll-item Market Reports
+              .scroll-paddles
+                button.paddle-left
+                button.paddle-right
+
+        #wrap-filters
+          .gwr
+            ul#filters
+              li.type-rt.icon-arrow-select
+                select
+                  option(value="rent", selected="selected") For Rent Price
+                  option(value="sold") Sold
+                  option(value="rented") Rented
+                  option(value="pending-sales") Pending Sales
+                  option(value="pending-rentals") Pending Rentals
+              li.mini-search.hidden
+                form(action="#")
+                  input(type='search', placeholder="Select Area or Enter City, Zip, Condo Name or Keyword")#autocomplete-ajax
+                  #submit-ms.icon-search
+                    input(type="submit", value="Submit")
+                #search-suggestions
+                  ul
+                    li(data-slug='Aventura|city') Aventura
+                    li(data-slug='Bal Harbour|city') Bal Harbour
+                    li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                    li(data-slug='Brickell|city') Brickell
+                    li(data-slug='Brickell Key|city') Brickell Key
+                    li(data-slug='Coconut Grove|city') Coconut Grove
+                    li(data-slug='Coral Gables|city') Coral Gables
+                    li(data-slug='Fisher Island|city') Fisher Island
+                    li(data-slug='Hollywood|city') Hollywood
+                    li(data-slug='Indian Creek|city') Indian Creek
+                    li(data-slug='Key Biscayne|city') Key Biscayne
+                    li(data-slug='Miami|city') Miami
+                    li(data-slug='Miami Beach|city') Miami Beach
+                    li(data-slug='Miami Shores|city') Miami Shores
+                    li(data-slug='North Miami|city') North Miami
+                    li(data-slug='North Miami Beach|city') North Miami Beach
+                    li(data-slug='Pembroke Pines|city') Pembroke Pines
+                    li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                    li(data-slug='Surfside|city') Surfside
+                #autocomplete-matches
+                  ul
+                    li(data-slug='Aventura|city') Aventura
+                    li(data-slug='Bal Harbour|city') Bal Harbour
+                    li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                    li(data-slug='Brickell|city') Brickell
+                    li(data-slug='Brickell Key|city') Brickell Key
+                    li(data-slug='Coconut Grove|city') Coconut Grove
+                    li(data-slug='Coral Gables|city') Coral Gables
+                    li(data-slug='Fisher Island|city') Fisher Island
+                    li(data-slug='Hollywood|city') Hollywood
+                    li(data-slug='Indian Creek|city') Indian Creek
+                    li(data-slug='Key Biscayne|city') Key Biscayne
+                    li(data-slug='Miami|city') Miami
+                    li(data-slug='Miami Beach|city') Miami Beach
+                    li(data-slug='Miami Shores|city') Miami Shores
+                    li(data-slug='North Miami|city') North Miami
+                    li(data-slug='North Miami Beach|city') North Miami Beach
+                    li(data-slug='Pembroke Pines|city') Pembroke Pines
+                    li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                    li(data-slug='Surfside|city') Surfside
+              li.price
+                button 
+                  span.icon-arrow-select
+                    span#text-price Any Price
+              li.beds
+                button 
+                  span.icon-arrow-select
+                    span#text-beds Beds
+              li.baths
+                button 
+                  span.icon-arrow-select
+                    span#text-baths Baths
+              li.type
+                button 
+                  span.icon-arrow-select
+                    span#text-type Single Family
+              li.all
+                button
+                  span.icon-arrow-select
+                    span All filters
+              li.save
+                strong#properties-found
+                  span 36,324
+                  | Properties
+                button
+                  span Save search
+            
+            #all-filters.neighborhood
+              ul#mini-filters
+                li.filter-box
+                  .gwr
+                    h4.icon-arrow-select Property search
+                    .wrap-item
+                      ul.list-type-sr
+                        li: button#for-sale.active 
+                              span For sale
+                        li: button#for-rent 
+                              span For Rent
+                      input(type="search", placeholder="Select Area or Enter City, Zip, Condo Name or Keyword", id="autocomplete-ajax-min")
+                      .icon-search#submit-ms-min
+                        input(type="submit", value="Submit")
+                li.cities
+                  .gwr
+                    h4.icon-arrow-select Choose cities
+                      span Aventura
+                    .wrap-item
+                      #cities-list
+                        ul
+                          li(data-slug='Aventura|city') Aventura
+                          li(data-slug='Bal Harbour|city') Bal Harbour
+                          li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                          li(data-slug='Biscayne Park|city') Biscayne Park
+                          li(data-slug='Brickell|city') Brickell
+                          li(data-slug='Brickell Key|city') Brickell Key
+                          li(data-slug='Coconut Grove|city') Coconut Grove
+                          li(data-slug='Coral Gables|city') Coral Gables
+                          li(data-slug='Cutler Bay|city') Cutler Bay
+                          li(data-slug='Doral|city') Doral
+                          li(data-slug='Eastern Shores|city') Eastern Shores
+                          li(data-slug='El Portal|city') El Portal
+                          li(data-slug='Fisher Island|city') Fisher Island
+                          li(data-slug='Florida City|city') Florida City
+                          li(data-slug='Fort Lauderdale|city') Fort Lauderdale
+                          li(data-slug='Golden Beach|city') Golden Beach
+                          li(data-slug='Goulds|city') Goulds
+                          li(data-slug='Hialeah Gardens|city') Hialeah Gardens
+                          li(data-slug='Hollywood|city') Hollywood
+                          li(data-slug='Homestead|city') Homestead
+                          li(data-slug='Indian Creek|city') Indian Creek
+                          li(data-slug='Kendall|city') Kendall
+                          li(data-slug='Key Biscayne|city') Key Biscayne
+                          li(data-slug='Medley|city') Medley
+                          li(data-slug='Miami|city') Miami
+                          li(data-slug='Miami Beach|city') Miami Beach
+                          li(data-slug='Miami Gardens|city') Miami Gardens
+                          li(data-slug='Miami Lakes|city') Miami Lakes
+                          li(data-slug='Miami Shores|city') Miami Shores
+                          li(data-slug='Miami Springs|city') Miami Springs
+                          li(data-slug='North Bay Village|city') North Bay Village
+                          li(data-slug='North Miami|city') North Miami
+                          li(data-slug='North Miami Beach|city') North Miami Beach
+                          li(data-slug='Opa-Locka|city') Opa-Locka
+                          li(data-slug='Palmetto Bay|city') Palmetto Bay
+                          li(data-slug='Pembroke Pines|city') Pembroke Pines
+                          li(data-slug='Pinecrest|city') Pinecrest
+                          li(data-slug='South Miami|city') South Miami
+                          li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                          li(data-slug='Surfside|city') Surfside
+                          li(data-slug='Sweetwater|city') Sweetwater
+                          li(data-slug='Virginia Gardens|city') Virginia Gardens
+                          li(data-slug='West Miami|city') West Miami
+                li.price
+                  .gwr
+                    h4.icon-arrow-select Price Range
+                    .wrap-item          
+                      .wrap-inputs
+                        input(id="price_from", type='text', name='', value="$0")
+                        span to
+                        input(id="price_to", type='text', name='', value="$50,000,000")
+                      .wrap-range
+                        #range-price.range-slide
+                      span.direct-results 4,109 Properties
+                li.baths
+                  .gwr
+                    h4.icon-arrow-select Bathrooms
+                    .wrap-item
+                      .wrap-range
+                        #range-baths.range-slide
+                      ul.markers-range
+                        each bath, a in ['Any', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5', '+']
+                          li #{bath}
+                      span.direct-results 4,109 Properties
+                li.beds
+                  .gwr
+                    h4.icon-arrow-select Bedrooms
+                    .wrap-item
+                      .wrap-range
+                        #range-beds.range-slide
+                      ul.markers-range
+                        each beds, e in ['Any', 'Studio', '1', '2', '3', '4', '5', '+']
+                          li #{beds}
+                      span.direct-results 4,109 Properties  
+                li.type
+                  .gwr
+                    h4.icon-arrow-select Property type
+                    .wrap-item
+                      .wrap-checks
+                        ul
+                          li
+                            input(type='checkbox', value='', id="first")
+                            label(for="first") Single Family Home
+                          li
+                            input(type='checkbox', value='', id="second")
+                            label(for="second") Condo / Townhome
+                          li
+                            input(type='checkbox', value='', id="third")
+                            label(for="third") Vacant Land
+                li.living
+                  .gwr
+                    h4.icon-arrow-select Living size
+                    .wrap-item
+                      .wrap-inputs
+                        input(id="living_from", type='text', name='', value="0 SF")
+                        span to
+                        input(id="living_to", type='text', name='', value="9,000 SF")
+                      .wrap-range
+                        #range-living.range-slide
+                li.year
+                  .gwr
+                    h4.icon-arrow-select Year Built
+                    .wrap-item
+                      .wrap-inputs
+                        input( id="year_from", type='text', name='', value="1961")
+                        span to
+                        input( id="year_to", type='text', name='', value="2021")
+                      .wrap-range
+                        #range-year.range-slide
+                li.waterfront
+                  .gwr
+                    h4.icon-arrow-select Waterfront description
+                    .wrap-item
+                      .wrap-select.icon-arrow-select
+                        select
+                          each waterfront , w in ["Any", "Bay Front", "Canal", "Fixed Bridge", "Intracoastal", "Lake front", "Ocean acces", "Ocean Front", "Point lot", "River front"]
+                            option(value='') #{waterfront}
+                li.parking
+                  .gwr
+                    h4.icon-arrow-select Parking spaces
+                    .wrap-item
+                      .wrap-select.icon-arrow-select
+                        select
+                          option(value='0') Any
+                          - for(p = 1; p < 4; p++)
+                            option(value='#{p}') #{p}
+                          option(value='+') 4+
+                li.land
+                  .gwr
+                    h4.icon-arrow-select Land size
+                    .wrap-item
+                      .wrap-inputs
+                        input(id="land_from", type='text', name='', value="0 SF")
+                        span to
+                        input(id="land_to", type='text', name='', value="9,000 SF")
+                      .wrap-range
+                        #range-land.range-slide
+                li.features
+                  .gwr
+                    h4.icon-arrow-select Features
+                    .wrap-item
+                      .wrap-checks
+                        ul
+                          li
+                            input(type='checkbox', value='', id="check1")
+                            label(for="check1") Waterfront
+                          li
+                            input(type='checkbox', value='', id="check2")
+                            label(for="check2") Ocean Acces
+                          li
+                            input(type='checkbox', value='', id="check3")
+                            label(for="check3") Ocean Views
+                          li
+                            input(type='checkbox', value='', id="check4")
+                            label(for="check4") Tennis Courts
+                          li
+                            input(type='checkbox', value='', id="check5")
+                            label(for="check5") Swimming Poll
+                          li
+                            input(type='checkbox', value='', id="check6")
+                            label(for="check6") Golf Course
+                          li
+                            input(type='checkbox', value='', id="check7")
+                            label(for="check7") Guest House
+                          li
+                            input(type='checkbox', value='', id="check8")
+                            label(for="check8") Boat Dock
+                          li
+                            input(type='checkbox', value='', id="check9")
+                            label(for="check9") Covered Parking
+                          li
+                            input(type='checkbox', value='', id="check10")
+                            label(for="check10") Bated Community
+                          li
+                            input(type='checkbox', value='', id="check11")
+                            label(for="check11") Bated Lorem
+                          li
+                            input(type='checkbox', value='', id="check12")
+                            label(for="check12") Ipsum Community
+                li.action-filter
+                  button#apply-filters-min Matching 
+                    span 29K 
+                    | Listings
+              button#apply-filters: span Apply Filters
+
+        #wrap-subfilters
+          .gwr
+            span#title-subfilters
+              span Villa, Condo, Twnhouse in Fl from $100,000 to $1,500,000
+            ul#sub-filters
+              li#link-favorites
+                a(href="#", title="Save Favorites", rel="nofollow").icon-favorite
+                  span
+                    span 0
+                    | Favorites
+              li.icon-arrow-select#filter-by
+                select
+                  option(value="price-desc") Highest Price
+                  option(value="price-asc") Lowest Price
+                  option(value="bed-desc") Beds High to Low
+                  option(value="bed-asc") Beds Low to High
+                  option(value="size-desc") Size High to Low
+                  option(value="size-asc") Size Low  to High 
+                  option(value="year-newest") Year Newest
+                  option(value="year-oldest") Year Oldest
+                  option(value="newest-listed") Newest Listed
+                  option(value="oldest-listed") Oldest Listed
+                  option(value="#", selected="selected") Newest First
+              li.icon-arrow-select.grid#filter-views
+                select
+                  option(value="grid", selected="selected") Grid
+                  option(value="list") List
+                  option(value="map") Map
+            span#info-subfilters Showing 6 of 43 Properties
+              span Scroll down for more.
+        section#wrap-result.view-grid
+          h1.title Search results
+          .gwr
+            #wrap-list-result
+              ul#head-list
+                li.address Address
+                li.price Asking Price
+                li.pr % / $
+                li.beds Beds
+                li.baths Baths
+                li.living-size Living Size
+                li.price-sf Price / SF 
+                li.build-year Year built
+                li.development Development / Subdivision
+              ul#result-search.slider-generator
+                - for(b = 0; b < 9; b++)
+                    - var price = Math.floor(Math.random() * 101)
+                    li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                      h2(title="Nombre completo de la dirección")
+                        span 151012 Collins Avenue Suit
+                      ul.features
+                        li.house-type: h3 Condo For Sale
+                        li.address Miami, FL 33145
+                        li.price $#{price},000,000
+                        li.pr.down 2.05%
+                        li.beds 10  
+                          span Beds 
+                        li.baths 8 
+                          span Baths 
+                        li.living-size 
+                          span 2,534
+                          | SF 
+                          span (452 m2)
+                        li.price-sf
+                          span $345 
+                          | / SF
+                          span ($244 m2)
+                        li.type: span Davis citrus Farms
+                        li.build-year
+                          span Built 
+                          | 2015
+                        li.development: span Star Island Corr
+                      .wrap-slider
+                        ul
+                          li
+                            img(src="#" data-src='http://retsimages.s3.amazonaws.com/13/A10168913_1.jpg', title='#', alt='#')
+                        button.prev: span.icon-arrow-select
+                        button.next: span.icon-arrow-select
+                      button.btn-check: span.icon-check
+                      a(href="javascript:void(0)", data-modal="modal_property_detail", data-position="0", rel="nofollow").view-detail.show-modal View detail
+            #wrap-map
+              #code-map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28742.90968747849!2d-80.20231346071917!3d25.77506484106738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+Florida!5e0!3m2!1ses!2s!4v1490883858310", allowfullscreen)
+              #map-actions.show-message
+                  #message-map 
+                    span Only showing 500 homes. 
+                    | Zoom in, or use filters to narrow your search.
+                  #message-map
+                    span Only showing 500 homes. 
+                    | Zoom in, or use filters to narrow your search.
+                    a(href="javascript:void(0)")#close-drag Close
+                    a(href="javascript:void(0)")#apply-drag Apply
+                  .content-map-btn-actions
+                    button.open-map Close
+                    button.close-map.hide Open
+        
+          .gwr
+            nav#nav-results
+              span#indicator Pag 1 of 467
+              a(href="#", title="First Page", rel="nofollow")#firstp.ad.visible
+                span.icon-arrow-select
+                span.icon-arrow-select
+                span First page
+              a(href="#", title="Prev Page", rel="nofollow")#prevn.arrow.icon-arrow-select.prevn.visible
+                span Previus page
+              ul#principal-nav
+                li: a(href='#', rel="nofollow") 1
+                li: a(href='#', rel="nofollow") 2
+                li.active: a(href='#', rel="nofollow") 3
+                li: a(href='#', rel="nofollow") 4
+                li: a(href='#', rel="nofollow") 5
+                li: a(href='#', rel="nofollow") 6
+                li: a(href='#', rel="nofollow") 7
+              span.points ...
+              ul#complementary-nav
+                li: a(href='#', rel="nofollow") 20
+                li: a(href='#', rel="nofollow") 30
+                li: a(href='#', rel="nofollow") 40
+              span.points ...
+              a(href="#", title="Prev Page", rel="nofollow")#nextn.arrow.icon-arrow-select.nextn.visible
+                span Next page
+              a(href="#", title="First Page", rel="nofollow")#lastp.ad.visible
+                span.icon-arrow-select
+                span.icon-arrow-select
+                span Last page
+
+        section.gwr.m-bottom
+          h2.block-title Miami Beach Neighborhood Guide
+          ul.tab-list.default-tab
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-schools").item-tab.active Schools
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-restaurants").item-tab Restaurants
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-shopping").item-tab Shopping
+            li: a(href="javascript:void(0)", rel="nofollow", data-tab="#tab-activities").item-tab Activities
+          ul.body-tabs.default-body-tab
+            li#tab-schools.default-item-tab.item-tab.default-item-tab.active
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-restaurants.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 15 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-shopping.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 20 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+            li#tab-activities.default-item-tab.item-tab
+              ul.list-guide
+                li
+                  h2 Brickell International Academy
+                  span 10 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+                li
+                  h2 Brickell International Academy
+                  span 12 reviews
+                  a(href="#", rel="nofollow", title="More Details") More Details
+
+        section.gwr.m-bottom
+          h2.block-title Miami Beach Real Estate Statistics
+          ul.es-content
+            li
+              h2 Available Sales
+              ul.list-es
+                li.es-total 945
+                li.price-title Avg Listing Price
+                li.price $6,6500,000
+                li.range-title Sales Price Range
+                li.range $1,345,000 - $19,900,000
+            li
+              h2 Available Rentals
+              ul.list-es
+                li.es-total 145
+                li.price-title Avg Rental Price
+                li.price $36,6500/mo
+                li.range-title Rental Price Range
+                li.range $1,345,000 - $19,900,000
+            li
+              h2 Sales History
+              ul.list-es
+                li.es-total 1,254
+                li.price-title Avg Sold Price
+                li.price $2,6500,000
+                li.range-title Sold Price Range
+                li.range $1,345,000 - $19,900,000
+
+        section.gwr.m-bottom
+          h2.block-title Latest News About Miami Beach Real Estate
+          ul.news-list
+            li
+              h2 Miami Beach Top Restaurant Venues
+              img(src="../images/propiertie1.jpg", alt="Miami Beach Top Restaurant Venues", title="Top Restaurant Venues")
+              a(href="#", title="Miami Beach Top Restaurant Venues") Top Restaurant Venues
+            li
+              h2 Miami Beach neighborhoods when moving from ouf of state
+              img(src="../images/propiertie2.jpg", alt="Miami Beach neighborhoods when moving from ouf of state", title="neighborhoods when moving from ouf of state")
+              a(href="#", title="Miami Beach neighborhoods when moving from ouf of state") Neighborhoods when moving from ouf of state
+            li
+              h2 Best Miami Beach Luxury condos under 3 million
+              img(src="../images/propiertie3.jpg", alt="Best Miami Beach Luxury condos under 3 million", title="Luxury condos under 3 million")
+              a(href="#", title="Best Miami Beach Luxury condos under 3 million") Luxury condos under 3 million
+        
+        section.gwr.mm-bottom
+          .form-content.large-form
+            .avatar-content
+              .content-avatar-image
+                img(src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img.active
+              .avatar-information
+                a(href="#",title="More Information").view-more More Information
+                h2 John Smith
+                a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+            form(action="", method="POST", id="form-request")
+              h2 Contact us for more details about 3254 Collins Ave, Suite 435
+              .gform_body
+                ul.gform_fields
+                  li.gfield
+                    label.gfield_label Name
+                    .ginput_container.ginput_container_text
+                      input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                  li.gfield
+                    label.gfield_label Email
+                    .ginput_container.ginput_container_email
+                      input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                  li.gfield
+                    label.gfield_label Phone
+                    .ginput_container.ginput_container_email
+                      input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                  li.gfield.comments
+                    label.gfield_label Comments
+                    .ginput_container
+                      textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                  li.gfield.requiredFields * Required Fields
+                  .gform_footer
+                    input(type="submit", id="gform_submit_button_5", value="Submit").gform_button.button 
+        
+        section.gwr.m-bottom.communities-list
+          h2 Miami Beach Communities
+          ul
+            li
+              span South of Fifth
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span South Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span MId Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Venetian Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Sunset Islands
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Fisher Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Hibiscus Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Star Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span La Gorce
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span Allison Island
+              span 
+                span $2.4M 
+                | Avg Sales Price
+            li
+              span North Beach
+              span 
+                span $2.4M 
+                | Avg Sales Price
+        
+        section.gwr.m-bottom.communities-list.column-list.builiding-m
+          h2 Miami Beach Profiled Buildings
+          ul
+            li Continuun in South Beach
+            li Apogee
+            li Murano Grande
+            li Portofino Tower
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+            li South of Fifth
+            li South Beach
+            li MId Beach
+            li Venetian Islands
+            li Sunset Islands
+            li Fisher Island
+            li Hibiscus Island
+            li Star Island
+            li La Gorce
+            li Allison Island
+            li North Beach
+
+        section.gwr.m-bottom.communities-list.column-list
+          h2 Miami Beach Zip Codes
+          ul
+            li 33109
+            li 33139
+            li 33141
+
+        section.gwr.block-simple-description
+          h2 Your Miami Beach real estate experts
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            a(href="#", title="ullamco") ullamco
+            |  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            a(href="#", title="ullamco") ullamco
+            |  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            a(href="#", title="ullamco") ullamco
+            |  it in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+      section.nav-aside
+        h2.title-list-aside  Miami Beach Real Estate
+        .content-nav
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+
+        .content-nav
+          h3.title-list-aside Miami Beach Communities
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+          button.btn.btn-see-more  View More
+
+        .content-nav
+          h3.title-list-aside Miami Beach Luxury Condos
+          ul.list-nav-aside
+            li: a(href="#", title="Miami Beach Real Estate") Miami Beach Real Estate
+            li: a(href="#", title="Homes For Sale ") Homes For Sale
+            li: a(href="#", title="Condos For Sale") Condos For Sale
+            li: a(href="#", title="Luxury Condos") Luxury Condos
+            li: a(href="#", title="Rentals") Rentals
+            li: a(href="#", title="Communities") Communities
+            li: a(href="#", title="Latest News") Latest News
+          button.btn.btn-see-more  View More
+
+        .content-nav
+          h3.title-list-aside Miami Beach Zip Codes
+          ul.list-nav-aside
+            li: a(href="#", title="33139") 33139
+            li: a(href="#", title="33141") 33141
+        
+        .content-nav
+          h4.title-list-aside Miami Beach Map
+          #min-map
+        
+        .content-nav
+          .form-content
+            .avatar-content
+              .content-avatar-image
+                img(src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img.active
+              .avatar-information
+                h2 John Smith
+                a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+                a(href="#",title="More Information").view-more More Information
+            form(action="", method="POST", id="form-request")
+              .gform_body
+                ul.gform_fields
+                  li.gfield
+                    label.gfield_label Name
+                    .ginput_container.ginput_container_text
+                      input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+                  li.gfield
+                    label.gfield_label Email
+                    .ginput_container.ginput_container_email
+                      input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+                  li.gfield
+                    label.gfield_label Phone
+                    .ginput_container.ginput_container_email
+                      input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+                  li.gfield.comments
+                    label.gfield_label Comments
+                    .ginput_container
+                      textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+                  li.gfield.requiredFields * Required Fields
+                  .gform_footer
+                    input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+        
+        .content-nav
+          .similar-properties
+            h2.title-similar-list Similar Properties For Sale
+              - for(b = 0; b < 6; b++)
+                article
+                  h2 
+                    a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+                      span Miami Beach, FL 33139
+                  ul
+                    li.price $65,000,000
+                    li 
+                      span 4 
+                      |Beds
+                    li 
+                      span 3 
+                      |Baths
+                    li 
+                      span 10,547 
+                      |SqFt
+                  a(href="#", title="1 Casuarina Concorse").layout-img
+                    img(src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img.active
+                  a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+            a(href="#", title="view more properties", rel="nofollow").show-more view more properties
+
+
+    include ../footer.jade
+
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="../js/dgt-master.min.js")
