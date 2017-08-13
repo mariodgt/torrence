@@ -5,21 +5,13 @@
     var $transitionTime = 6500;
     
     
-    $ventana.on('load', function() {
-        // Mostrando la primera imagen y activando el slider del Main
-        if ($cuerpo.hasClass('home')) {
-            //apareceImagen($lisSlider.eq(0)); 
-        }
-    });
-    
-    
     // Slider del main (Home)
     var $sliderMain = $('#slideHome');
     if ($sliderMain.length) {
         var $ulSlider = $sliderMain.find('> ul')
         var $lisSlider = $ulSlider.find('> li');
         var nLis = $lisSlider.length;
-        if (nLis > 1) {
+        if (nLis > 0) {
             // Dandole ancho relativo al Ul y a los Li.
             if($sliderMain.hasClass('swipe')){
                 $ulSlider.css('width', (nLis * 100) + '%');
@@ -139,6 +131,12 @@
         }
     };
     
+    $ventana.on('load', function() {
+        // Mostrando la primera imagen y activando el slider del Main
+        if ($cuerpo.hasClass('home')) {
+            apareceImagen($lisSlider.eq(0)); 
+        }
+    });
     
     // Boton para subir al top de la web
     var $toUp = $('#toup');

@@ -5,13 +5,11 @@
     <title>Home | Master Elite 2017</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'-->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0073AC">
-    <meta name="theme-color" content="#0073AC">
-    <meta name="msapplication-navbutton-color" content="#0073AC">
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
-    <link rel="stylesheet" href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7bafe1">
+    <meta name="theme-color" content="#7bafe1">
+    <meta name="msapplication-navbutton-color" content="#7bafe1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,7 +19,7 @@
         <div class="wrap-options">
             <div class="gwr">
                 <ul id="user-options">
-                    <li class="login icon-user"><a class="show-modal" href="#" title="Sign in" data-modal="modal_login" rel="nofollow">Sign in</a>
+                    <li class="login"><a class="show-modal icon-login" href="#" title="Sign in" data-modal="modal_login" rel="nofollow">Login</a>
                     </li>
                     <li class="register"><a class="show-modal" href="#" title="Register" data-modal="modal_login" rel="nofollow">Register</a>
                     </li>
@@ -31,7 +29,7 @@
                     </li>
                     <li class="icon-twitter"><a href="#" title="Twitter" target="_blank" rel="nofollow">Twitter</a>
                     </li>
-                    <li class="icon-google-plus"><a href="#" title="Google+" target="_blank" rel="nofollow">Google+</a>
+                    <li class="icon-google"><a href="#" title="Google+" target="_blank" rel="nofollow">Google+</a>
                     </li>
                     <li class="icon-instagram"><a href="#" title="Instagram" target="_blank" rel="nofollow">Instagram</a>
                     </li>
@@ -63,12 +61,16 @@
                     <li class="chinese"><span>ZH</span>
                         <button data-iso="zh" title="#">中文</button>
                     </li>
-                </ul><a href="tel:305.705.5000" title="Call Us" id="call-us">Call Us: 305.705.5000</a>
+                </ul>
+                <div class="contact-options">
+                    <a href="tel:305.705.5000" title="Call Us" id="call-us" class="icon-phone">Call Us: 305.705.5000</a>
+                    <a href="mailto:info@torrencerealestate.com" class="icon-mail">info@torrencerealestate.com</a>
+                </div>
             </div>
         </div>
         <div class="wrap-menu">
             <div class="gwr">
-                <a class="title" href="#" title="Master Elite"><img class="logo" src="images/logo.png" title="logo" alt="Tremgroup">
+                <a class="logo" href="#" title="Master Elite"><img class="img-logo" src="images/logo.png" title="logo" alt="Tremgroup">
                 </a>
                 <nav>
                     <ul>
@@ -125,6 +127,21 @@
     </header>
 
     <main id="main" class="toload">
+        <article class="search-autocomplete">
+            <img data-img="images/imgx01.png" alt="" class="lazy">
+            <h1 class="search-title">Torrence Real Estate Exchange</h1>
+            <p class="search-subtitle">Tampa Real Estate Experts</p>
+            <form id="form-header-idx-autocomplete-ajax-home-search" action="">
+                <input id="header-idx-autocomplete-ajax-home-search" type="text" autocomplete="off" placeholder="Search by Address, City, Neighborhood, Zip, MLS, or Building Name/Subdivision" class="ui-autocomplete-input"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                <input type="submit">
+                </div>
+                <a href="#" class="link">+ Advanced search</a>
+            </form>
+            <div class="w-btn">
+                <a href="#" class="dgt-btn"><span>Search by Neighborhood</span></a>
+                <a href="#" class="dgt-btn"><span>Search by Map</span></a>
+            </div>
+        </article>
         <div class="fade" id="slideHome">
             <ul>
                 <li>
@@ -141,7 +158,7 @@
                                 </ul>
                             </a>
                         </div>
-                    </div><img class="bg-slider" original-src="images/home/bg-home01.jpg" alt="#" title="#">
+                    </div><img class="bg-slider" original-src="images/home/bgprincipal.jpg" alt="#" title="#">
                 </li>
                 <li>
                     <div class="w-featured">
@@ -149,7 +166,7 @@
                             <button class="open-video" data-video="https://www.youtube.com/watch?v=9RBSH7Xvn3Q"><span></span>
                             </button>
                             <a class="details" href="#" title="#">
-                                <h2>Contemporary Luxury Oasis 02</h2><span>212 W. Dilido Drive</span>
+                                <h2>Contemporary Luxury Oasis 01</h2><span>212 W. Dilido Drive</span>
                                 <ul>
                                     <li>3 beds</li>
                                     <li>2 Baths</li>
@@ -157,7 +174,7 @@
                                 </ul>
                             </a>
                         </div>
-                    </div><img class="bg-slider" original-src="images/home/bg-home02.jpg" alt="#" title="#">
+                    </div><img class="bg-slider" original-src="images/home/bgprincipal.jpg" alt="#" title="#">
                 </li>
                 <li>
                     <div class="w-featured">
@@ -165,7 +182,7 @@
                             <button class="open-video" data-video="https://www.youtube.com/watch?v=9RBSH7Xvn3Q"><span></span>
                             </button>
                             <a class="details" href="#" title="#">
-                                <h2>Contemporary Luxury Oasis 03</h2><span>212 W. Dilido Drive</span>
+                                <h2>Contemporary Luxury Oasis 01</h2><span>212 W. Dilido Drive</span>
                                 <ul>
                                     <li>3 beds</li>
                                     <li>2 Baths</li>
@@ -173,89 +190,58 @@
                                 </ul>
                             </a>
                         </div>
-                    </div><img class="bg-slider" original-src="images/home/bg-home04.jpg" alt="#" title="#">
+                    </div><img class="bg-slider" original-src="images/home/bgprincipal.jpg" alt="#" title="#">
                 </li>
             </ul>
             <div class="nav"></div>
             <div class="bullets"></div>
             <div class="next-prev">
-                <button class="prev" rel="prev"><span class="icon-arrow">❮</span>
+                <button class="prev" rel="prev"><span class="icon-arrow-left"></span>
                 </button>
-                <button class="next" rel="next"><span class="icon-arrow">❯</span>
+                <button class="next" rel="next"><span class="icon-arrow-right"></span>
                 </button>
             </div>
         </div>
-        <button class="next-section"><span class="icon-arrow"></span>
+        <button id="nextSection" class="next-section"><span class="icon-arrow">Abajo</span>
         </button>
     </main>
-
-    <section id="listings" class="section toload">
-        <div id="information">
-            <ul id="slider">
+    
+    <section id="exclusiveListing" class="toload">
+        <div class="w-slider">
+            <ul id="sliderListing">
                 <li>
-                    <h2>Exclusive Listings</h2>
-                    <strong>$450,000</strong>
-                    <ul>
-                        <li><span><i class="icon-beds"></i> 2 Beds</span>
-                        </li>
-                        <li><span><i class="icon-baths"></i> 1 Baths</span>
-                        </li>
-                        <li><span><i class="icon-obj"></i> 851 SF</span>
-                        </li>
-                    </ul>
-                    <div class="built">
-                        <span class="address"><i class="icon-neighborhood"></i> 1818 Meridian House</span>
-                        <span class="year">Built 1956</span>
-                    </div>
-                    <h3>1816 Meridian Ave # 2, Miami Beach, FL 33139</h3>
-                    <span>1818 Meridian House,  33139</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a href="#" title="View Details" id="details">View Details</a>
-                </li>
-                <li>
-                    <h2>Exclusive Listings</h2>
-                    <strong>$120,400</strong>
-                    <ul>
-                        <li><span><i class="icon-beds"></i> 2 Beds</span>
-                        </li>
-                        <li><span><i class="icon-baths"></i> 1 Baths</span>
-                        </li>
-                        <li><span><i class="icon-obj"></i> 851 SF</span>
-                        </li>
-                    </ul>
-                    <div class="built">
-                        <span class="address"><i class="icon-neighborhood"></i> 1818 Meridian House</span>
-                        <span class="year">Built 1956</span>
-                    </div>
-                    <h3>1816 Meridian Ave # 2, Miami Beach, FL 33139</h3>
-                    <span>1818 Meridian House,  33139</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a href="#" title="View Details" id="details">View Details</a>
-                </li>
-            </ul>
-            <div id="navigation"></div>
-            <a href="#" title="All Listings" class="btn-view">View all listings</a>
-        </div>
-
-        <div id="photos">
-            <ul>
-                <li>
-                    <img data-img="images/home/bg-home.jpg" alt="">
-                </li>
-                <li>
-                    <img data-img="images/home/bg-home03.jpg" alt="">
+                    <img data-img="images/e01.jpg" alt="" class="lazy">
                 </li>
             </ul>
         </div>
+        <ul class="list-exclusive">
+            <li class="item-exclusive">
+                <div class="w-item">
+                    <article>
+                        <h3>8547 South Collins Av</h3>
+                        <span>Coconut Grove, Florida</span>
+                        <strong>$2,175,000</strong>
+                        <ul>
+                            <li class="icon-bed">
+                                <span>3 Beds</span>
+                            </li>
+                            <li class="icon-bath">
+                                <span>2 Baths</span>
+                            </li>
+                            <li class="icon-sf">
+                                <span>2,345 SF</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">View Details</a>
+                    </article>
+                    <img src="" alt="">
+                </div>
+            </li>
+        </ul>
     </section>
 
-    <section id="section3" class="section toload" style="height: 600px; background-color: green"> 
-        <img class="lazy" data-img="../images/home/bg-home03.jpg" alt="">
-    </section>
-    <section id="section4" class="section toload" style="height: 600px; background-color: red"> 
-        <img class="lazy" data-img="../images/home/bg-home03.jpg" alt="">
-    </section>
-
+    <section id="section3" class="toload"></section>
+    <section id="section4" class="toload"></section>
 
     <footer id="footer">
         <div class="gwr">

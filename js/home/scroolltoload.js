@@ -3,7 +3,7 @@
 	
 	var $cuerpo = $('body');
 	var element1 = $('#main'); //sección slider
-	var element2 = $('#listings');
+	var element2 = $('#exclusiveListing');
 	var element3 = $('#section3');
 	var element4 = $('#section4');
 	
@@ -13,8 +13,9 @@
 		var $nSections = $cuerpo.find('.toload');
 		for (var i = 0; i < $nSections.length ; i++ ) {
 			//cargar la primera section
-			$cuerpo.find('.toload').eq(0).removeClass('.toload').addClass('loaded').siblings().removeClass('loaded');
-
+			$cuerpo.find('.toload').eq(0).removeClass('toload').addClass('loaded').siblings().removeClass('loaded');
+			element1.addClass('loaded');
+			aparecerImagenes(element1);
 			console.log(i);
 			switch (i) {
 				case 0:
